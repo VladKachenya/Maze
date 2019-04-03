@@ -1,0 +1,24 @@
+C:\Users\VlAD\Desktop\Maze\MazeConsole\obj\Debug\MazeConsole.csprojAssemblyReference.cache
+C:\Users\VlAD\Desktop\Maze\MazeConsole\obj\Debug\MazeConsole.csproj.CoreCompileInputs.cache
+C:\Users\VlAD\Desktop\Maze\MazeConsole\bin\Debug\MazeConsole.exe.config
+C:\Users\VlAD\Desktop\Maze\MazeConsole\bin\Debug\MazeConsole.exe
+C:\Users\VlAD\Desktop\Maze\MazeConsole\bin\Debug\MazeConsole.pdb
+C:\Users\VlAD\Desktop\Maze\MazeConsole\obj\Debug\MazeConsole.exe
+C:\Users\VlAD\Desktop\Maze\MazeConsole\obj\Debug\MazeConsole.pdb
+C:\Users\VlAD\Desktop\Maze\MazeConsole\bin\Debug\MazeLogic.dll
+C:\Users\VlAD\Desktop\Maze\MazeConsole\bin\Debug\MazeModel.dll
+C:\Users\VlAD\Desktop\Maze\MazeConsole\bin\Debug\MazeLogic.pdb
+C:\Users\VlAD\Desktop\Maze\MazeConsole\bin\Debug\MazeModel.pdb
+C:\Users\VlAD\Desktop\Maze\MazeConsole\obj\Debug\MazeConsole.csproj.CopyComplete
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\bin\Debug\MazeConsole.exe.config
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\bin\Debug\MazeConsole.exe
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\bin\Debug\MazeConsole.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\bin\Debug\MazeLogic.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\bin\Debug\MazeModel.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\bin\Debug\MazeLogic.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\bin\Debug\MazeModel.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\obj\Debug\MazeConsole.csprojAssemblyReference.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\obj\Debug\MazeConsole.csproj.CoreCompileInputs.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\obj\Debug\MazeConsole.csproj.CopyComplete
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\obj\Debug\MazeConsole.exe
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\obj\Debug\MazeConsole.pdb

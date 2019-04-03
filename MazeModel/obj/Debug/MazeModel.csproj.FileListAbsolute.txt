@@ -1,0 +1,16 @@
+C:\Users\VlAD\Desktop\Maze\MazeModel\bin\Debug\MazeModel.dll
+C:\Users\VlAD\Desktop\Maze\MazeModel\bin\Debug\MazeModel.pdb
+C:\Users\VlAD\Desktop\Maze\MazeModel\obj\Debug\MazeModel.csproj.CoreCompileInputs.cache
+C:\Users\VlAD\Desktop\Maze\MazeModel\obj\Debug\MazeModel.dll
+C:\Users\VlAD\Desktop\Maze\MazeModel\obj\Debug\MazeModel.pdb
+C:\Users\VlAD\Desktop\Maze\MazeModel\obj\Debug\MazeModel.csprojAssemblyReference.cache
+F:\Maze\MazeModel\obj\Debug\MazeModel.csprojAssemblyReference.cache
+F:\Maze\MazeModel\obj\Debug\MazeModel.csproj.CoreCompileInputs.cache
+F:\Maze\MazeModel\obj\Debug\MazeModel.dll
+F:\Maze\MazeModel\obj\Debug\MazeModel.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeModel\bin\Debug\MazeModel.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeModel\bin\Debug\MazeModel.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeModel\obj\Debug\MazeModel.csprojAssemblyReference.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeModel\obj\Debug\MazeModel.csproj.CoreCompileInputs.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeModel\obj\Debug\MazeModel.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeModel\obj\Debug\MazeModel.pdb
