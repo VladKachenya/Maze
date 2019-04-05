@@ -8,9 +8,9 @@ namespace MazeModel.Base
 {
     public abstract class ModelBase
     {
-        public string ElementName { get; protected set; }
+        public string ElementName { get;}
 
-        public ModelBase(string elementName)
+        protected ModelBase(string elementName)
         {
             ElementName = elementName;
         }

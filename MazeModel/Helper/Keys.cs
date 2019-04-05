@@ -9,6 +9,5 @@
         public const string HeroKey = "Hero";
         public const string CoinKey = "Coin";
         public const string ExitKey = "Exit";
-
     }
 }

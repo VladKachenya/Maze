@@ -20,3 +20,12 @@ C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeLogic\obj\Debug\MazeLogic.
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeLogic\obj\Debug\MazeLogic.csproj.CopyComplete
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeLogic\obj\Debug\MazeLogic.dll
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeLogic\obj\Debug\MazeLogic.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeLogic\bin\Debug\MazeLogic.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeLogic\bin\Debug\MazeLogic.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeLogic\bin\Debug\MazeModel.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeLogic\bin\Debug\MazeModel.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeLogic\obj\Debug\MazeLogic.csprojAssemblyReference.cache
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeLogic\obj\Debug\MazeLogic.csproj.CoreCompileInputs.cache
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeLogic\obj\Debug\MazeLogic.csproj.CopyComplete
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeLogic\obj\Debug\MazeLogic.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeLogic\obj\Debug\MazeLogic.pdb
