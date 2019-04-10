@@ -24,7 +24,7 @@ namespace MazeLogic.Builders
             IMaze res = new Maze(y, x);
             foreach (var builder in Builders)
             {
-                builder.Build(ref res);
+                builder.Build(res);
             }
             return res;
         }

@@ -6,7 +6,7 @@ namespace MazeLogic.Builders
 {
     public class HeroBuilder : IBuilder
     {
-        public void Build(ref IMaze maze)
+        public void Build(IMaze maze)
         {
             var hero = Hero.GetHero;
             hero.IsWin = false;

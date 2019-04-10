@@ -5,6 +5,6 @@ namespace MazeLogic.Interfases.Builders
 {
     public interface IBuilder
     {
-        void Build(ref IMaze maze);
+        void Build(IMaze maze);
     }
 }

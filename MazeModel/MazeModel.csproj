@@ -50,6 +50,7 @@
     <Compile Include="ComplexModels\Сorridor.cs" />
     <Compile Include="Helper\Direction.cs" />
     <Compile Include="Helper\Keys.cs" />
+    <Compile Include="Interfases\Base\IModelBase.cs" />
     <Compile Include="Interfases\ICollector.cs" />
     <Compile Include="Interfases\ICoinContainer.cs" />
     <Compile Include="Interfases\IEntityContaining.cs" />
@@ -62,5 +63,6 @@
     <Compile Include="Models\Wall.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

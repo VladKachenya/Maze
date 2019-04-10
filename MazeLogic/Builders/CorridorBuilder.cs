@@ -13,7 +13,7 @@ namespace MazeLogic.Builders
         private IMaze _maze;
         private Random rand = new Random();
 
-        public void Build(ref IMaze maze)
+        public void Build(IMaze maze)
         {
             _maze = maze;
             BuildCorridors(_maze[0,0]);

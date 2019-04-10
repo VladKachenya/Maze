@@ -15,7 +15,7 @@ namespace MazeLogic.Builders
             _coinCont = coinCont;
             _random = new Random();
         }
-        public void Build(ref IMaze maze)
+        public void Build(IMaze maze)
         {
             int counter = 0;
             while (counter < _coinCont)

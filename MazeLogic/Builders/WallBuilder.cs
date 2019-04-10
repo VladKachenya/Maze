@@ -7,7 +7,7 @@ namespace MazeLogic.Builders
 {
     public class WallBuilder : IBuilder
     {
-        public void Build(ref IMaze maze)
+        public void Build(IMaze maze)
         {
             for (int y = 0; y < maze.Height; y++)
             {
