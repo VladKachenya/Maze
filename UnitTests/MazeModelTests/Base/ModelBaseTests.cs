@@ -2,7 +2,7 @@
 using MazeModel.Base;
 using NUnit.Framework;
 
-namespace UnitTests.MazeModel.BaseTests
+namespace MazeModelTests.Base
 {
     class ModelBaseClassForTest : ModelBase
     {

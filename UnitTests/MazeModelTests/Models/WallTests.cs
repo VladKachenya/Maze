@@ -2,7 +2,7 @@
 using MazeModel.Models;
 using NUnit.Framework;
 
-namespace UnitTests.MazeModel.ModelsTests
+namespace MazeModelTests.Models
 {
     [TestFixture]
     public class WallTests

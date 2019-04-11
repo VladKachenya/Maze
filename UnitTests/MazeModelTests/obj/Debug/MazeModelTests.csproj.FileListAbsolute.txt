@@ -1,0 +1,16 @@
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\MazeModelTests.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\MazeModelTests.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\Castle.Core.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\Moq.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\Moq.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\nunit.framework.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\nunit.framework.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\MazeModel.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\MazeModel.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\obj\Debug\MazeModelTests.csprojAssemblyReference.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\obj\Debug\MazeModelTests.csproj.CoreCompileInputs.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\obj\Debug\MazeModelTests.csproj.CopyComplete
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\obj\Debug\MazeModelTests.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\obj\Debug\MazeModelTests.pdb

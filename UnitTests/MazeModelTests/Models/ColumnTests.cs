@@ -2,16 +2,16 @@
 using MazeModel.Models;
 using NUnit.Framework;
 
-namespace UnitTests.MazeModel.ModelsTests
+namespace MazeModelTests.Models
 {
     [TestFixture]
-    public class CoinTests
+    public class ColumnTests
     {
         [Test]
         public void ElementNameIsColumn()
         {
-            var coin = new Coin();
-            Assert.AreEqual(coin.ElementName, Keys.CoinKey);
+            var column = new Column();
+            Assert.AreEqual(column.ElementName, Keys.ColumnKey);
         }
     }
 }

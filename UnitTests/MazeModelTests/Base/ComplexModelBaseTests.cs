@@ -1,7 +1,7 @@
 ﻿using MazeModel.Base;
 using NUnit.Framework;
 
-namespace UnitTests.MazeModel.BaseTests
+namespace MazeModelTests.Base
 {
     class ComplexModelBaseForTest : ComplexModelBase
     {
@@ -13,6 +13,6 @@ namespace UnitTests.MazeModel.BaseTests
     [TestFixture]
     public class ComplexModelBaseTests
     {
-        
+
     }
 }
