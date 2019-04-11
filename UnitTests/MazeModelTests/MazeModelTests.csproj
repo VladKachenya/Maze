@@ -46,6 +46,9 @@
   <ItemGroup>
     <Compile Include="Base\ComplexModelBaseTests.cs" />
     <Compile Include="Base\ModelBaseTests.cs" />
+    <Compile Include="ComplexModels\CorridorTests.cs" />
+    <Compile Include="ComplexModels\ExitTests.cs" />
+    <Compile Include="ComplexModels\RoomTests.cs" />
     <Compile Include="Models\CoinTests.cs" />
     <Compile Include="Models\ColumnTests.cs" />
     <Compile Include="Models\HeroTests.cs" />
@@ -58,9 +61,7 @@
       <Name>MazeModel</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ComplexModels\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <PackageReference Include="Moq">
       <Version>4.10.1</Version>

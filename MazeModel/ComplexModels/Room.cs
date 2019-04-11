@@ -4,6 +4,7 @@ using System.Linq;
 using MazeModel.Base;
 using MazeModel.Helper;
 using MazeModel.Interfases;
+using MazeModel.Interfases.Base;
 
 namespace MazeModel.ComplexModels
 {
@@ -14,7 +15,7 @@ namespace MazeModel.ComplexModels
         {
         }
 
-        public void SetNeighbor(ModelBase modelBase, Direction key)
+        public void SetNeighbor(IModelBase modelBase, Direction key)
         {
             _naighborDictionarys.Remove(key);
             this._naighborDictionarys.Add(key, modelBase);
@@ -22,7 +23,7 @@ namespace MazeModel.ComplexModels
 
         public bool IsSealed => _naighborDictionarys.All(el => el.Value.ElementName == Keys.WallKey);
 
-        public IEnumerable<KeyValuePair<Direction, ModelBase>> GetEnumerable()
+        public IEnumerable<KeyValuePair<Direction, IModelBase>> GetEnumerable()
         {
             return _naighborDictionarys;
         }

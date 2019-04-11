@@ -2,20 +2,21 @@
 using MazeModel.Interfases;
 using System;
 using System.Collections.Generic;
+using MazeModel.Interfases.Base;
 
 namespace MazeModel.Base
 {
-    public abstract class ComplexModelBase : ModelBase, IEntityContaining
+    public abstract class ComplexModelBase : ModelBase, IComplexModelBase
     {
-        protected Dictionary<Direction, ModelBase> _naighborDictionarys;
-        private ModelBase _content;
+        protected Dictionary<Direction, IModelBase> _naighborDictionarys;
+        private IModelBase _content;
 
         public ComplexModelBase(string elementName) : base(elementName)
         {
-            _naighborDictionarys = new Dictionary<Direction, ModelBase>();
+            _naighborDictionarys = new Dictionary<Direction, IModelBase>();
         }
 
-        public ModelBase Content
+        public IModelBase Content
         {
             get => _content == null ? this: _content;
             set
@@ -27,7 +28,7 @@ namespace MazeModel.Base
 
         public bool IsEmpty { get; protected set; } = true;
 
-        public ModelBase this[Direction direction]
+        public IModelBase this[Direction direction]
         {
             get
             {

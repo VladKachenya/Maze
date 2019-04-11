@@ -1,12 +1,13 @@
 ﻿using MazeModel.Base;
 using MazeModel.Helper;
 using MazeModel.Interfases;
+using MazeModel.Interfases.Base;
 
 namespace MazeModel.ComplexModels
 {
     public class Сorridor : ComplexModelBase, IOriented
     {
-        public Сorridor(Direction sideEntity1, ModelBase entity1, ModelBase entity2)
+        public Сorridor(Direction sideEntity1, IModelBase entity1, IModelBase entity2)
             : base(Keys.СorridorKey)
         {
             switch (sideEntity1)

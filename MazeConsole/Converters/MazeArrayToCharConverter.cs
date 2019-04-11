@@ -4,12 +4,13 @@ using MazeModel.Base;
 using MazeModel.ComplexModels;
 using MazeModel.Helper;
 using MazeModel.Interfases;
+using MazeModel.Interfases.Base;
 
 namespace MazeConsole.Converters
 {
     public class MazeToCharConverter : IConverter<IMaze, char[,]>
     {
-        private IConverter<IMaze, ModelBase[,]> _modelToArrComverter;
+        private IConverter<IMaze, IModelBase[,]> _modelToArrComverter;
         public MazeToCharConverter()
         {
             _modelToArrComverter = new MazeToEntityArrayConverter();
@@ -27,7 +28,7 @@ namespace MazeConsole.Converters
             }
             return res;
         }
-        private char EntityToCharConverter(ModelBase modelBase)
+        private char EntityToCharConverter(IModelBase modelBase)
         {
             switch (modelBase?.ElementName)
             {

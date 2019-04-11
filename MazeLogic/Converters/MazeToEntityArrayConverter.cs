@@ -2,17 +2,18 @@
 using MazeModel.Base;
 using MazeModel.Helper;
 using MazeModel.Interfases;
+using MazeModel.Interfases.Base;
 using MazeModel.Models;
 
 namespace MazeLogic.Converters
 {
-    public class MazeToEntityArrayConverter : IConverter<IMaze, ModelBase[,]>
+    public class MazeToEntityArrayConverter : IConverter<IMaze, IModelBase[,]>
     {
-        public ModelBase[,] Convert(IMaze maze)
+        public IModelBase[,] Convert(IMaze maze)
         {
             int height = maze.Height * 2 + 1;
             int width = maze.Width * 2 + 1;
-            ModelBase[,] res = new ModelBase[height, width];
+            IModelBase[,] res = new IModelBase[height, width];
             for (int y = 0; y < maze.Height; y++)
             {
                 for (int x = 0; x < maze.Width; x++)
@@ -36,7 +37,7 @@ namespace MazeLogic.Converters
             return res;
         }
 
-        private ModelBase GetContent(ModelBase element)
+        private IModelBase GetContent(IModelBase element)
         {
             if (element is ComplexModelBase @base)
             {
