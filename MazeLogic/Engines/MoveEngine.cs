@@ -3,6 +3,7 @@ using MazeLogic.Interfases.Engines;
 using MazeModel.Base;
 using MazeModel.Helper;
 using MazeModel.Interfases;
+using MazeModel.Interfases.Base;
 using MazeModel.Models;
 
 namespace MazeLogic.Engines
@@ -11,7 +12,7 @@ namespace MazeLogic.Engines
     {
         private readonly Hero _hero;
         private readonly IMaze _maze;
-        private ComplexModelBase _currentCell;
+        private IComplexModelBase _currentCell;
 
         public MoveEngine(Hero hero, IMaze maze)
         {

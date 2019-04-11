@@ -52,6 +52,7 @@
     <Compile Include="Helper\Keys.cs" />
     <Compile Include="Interfases\Base\IComplexModelBase.cs" />
     <Compile Include="Interfases\Base\IModelBase.cs" />
+    <Compile Include="Interfases\ComplexModels\IRoom.cs" />
     <Compile Include="Interfases\ICollector.cs" />
     <Compile Include="Interfases\ICoinContainer.cs" />
     <Compile Include="Interfases\Base\IEntityContaining.cs" />

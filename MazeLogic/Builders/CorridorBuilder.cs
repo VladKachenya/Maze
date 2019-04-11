@@ -5,6 +5,7 @@ using MazeModel.Interfases;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using MazeModel.Interfases.ComplexModels;
 
 namespace MazeLogic.Builders
 {
@@ -19,11 +20,11 @@ namespace MazeLogic.Builders
             BuildCorridors(_maze[0,0]);
         }
 
-        private void BuildCorridors(Room startRoom)
+        private void BuildCorridors(IRoom startRoom)
         {
             var startCell = startRoom;
             var currentCell = startCell;
-            Stack<Room> cells = new Stack<Room>();
+            Stack<IRoom> cells = new Stack<IRoom>();
             do
             {
                 var neighbors = GetAllSealedNeighbors(currentCell);
@@ -45,9 +46,9 @@ namespace MazeLogic.Builders
             } while (true);
         }
 
-        private List<Room> GetAllSealedNeighbors(Room room)
+        private List<IRoom> GetAllSealedNeighbors(IRoom room)
         {
-            var res = new List<Room>();
+            var res = new List<IRoom>();
             var pos = _maze.GetIndex(room);
             if (pos.Item1 - 1 >= 0 && _maze[pos.Item1 - 1, pos.Item2].IsSealed)
             {
@@ -68,7 +69,7 @@ namespace MazeLogic.Builders
             return res;
         }
 
-        private void BrokeWall(Room room1, Room room2)
+        private void BrokeWall(IRoom room1, IRoom room2)
         {
             Сorridor door;
             var room1Sides = room1.GetEnumerable();
@@ -116,7 +117,7 @@ namespace MazeLogic.Builders
                 default: throw new ArgumentException();
             }
         }
-        private Room GetRandomCell(List<Room> rooms)
+        private IRoom GetRandomCell(List<IRoom> rooms)
         {
             var randIdnex = rand.Next(rooms.Count);
             return rooms[randIdnex];

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using MazeModel.ComplexModels;
+using MazeModel.Interfases.ComplexModels;
 
 namespace MazeModel.Interfases
 {
@@ -9,14 +10,14 @@ namespace MazeModel.Interfases
         int Width { get; }
         int Height { get; }
 
-        Room this[int y, int x]
+        IRoom this[int y, int x]
         {
             get; set;
         }
 
-        (int, int) GetIndex(Room room);
+        (int, int) GetIndex(IRoom room);
 
-        IEnumerable<Room> GetEnumerable();
+        IEnumerable<IRoom> GetEnumerable();
 
     }   
 }

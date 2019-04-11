@@ -2,64 +2,6 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.7.2": {
-      "Castle.Core/4.3.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Configuration"
-        ],
-        "compile": {
-          "lib/net45/Castle.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Castle.Core.dll": {}
-        }
-      },
-      "Moq/4.10.1": {
-        "type": "package",
-        "dependencies": {
-          "Castle.Core": "4.3.1",
-          "System.Threading.Tasks.Extensions": "4.5.1"
-        },
-        "compile": {
-          "lib/net45/Moq.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Moq.dll": {}
-        }
-      },
-      "NUnit/3.11.0": {
-        "type": "package",
-        "compile": {
-          "lib/net45/nunit.framework.dll": {}
-        },
-        "runtime": {
-          "lib/net45/nunit.framework.dll": {}
-        },
-        "build": {
-          "build/NUnit.props": {}
-        }
-      },
-      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        }
-      },
-      "System.Threading.Tasks.Extensions/4.5.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
-        }
-      },
       "MazeModel/1.0.0": {
         "type": "project",
         "compile": {
@@ -71,64 +13,6 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win": {
-      "Castle.Core/4.3.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Configuration"
-        ],
-        "compile": {
-          "lib/net45/Castle.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Castle.Core.dll": {}
-        }
-      },
-      "Moq/4.10.1": {
-        "type": "package",
-        "dependencies": {
-          "Castle.Core": "4.3.1",
-          "System.Threading.Tasks.Extensions": "4.5.1"
-        },
-        "compile": {
-          "lib/net45/Moq.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Moq.dll": {}
-        }
-      },
-      "NUnit/3.11.0": {
-        "type": "package",
-        "compile": {
-          "lib/net45/nunit.framework.dll": {}
-        },
-        "runtime": {
-          "lib/net45/nunit.framework.dll": {}
-        },
-        "build": {
-          "build/NUnit.props": {}
-        }
-      },
-      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        }
-      },
-      "System.Threading.Tasks.Extensions/4.5.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
-        }
-      },
       "MazeModel/1.0.0": {
         "type": "project",
         "compile": {
@@ -140,64 +24,6 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-x64": {
-      "Castle.Core/4.3.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Configuration"
-        ],
-        "compile": {
-          "lib/net45/Castle.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Castle.Core.dll": {}
-        }
-      },
-      "Moq/4.10.1": {
-        "type": "package",
-        "dependencies": {
-          "Castle.Core": "4.3.1",
-          "System.Threading.Tasks.Extensions": "4.5.1"
-        },
-        "compile": {
-          "lib/net45/Moq.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Moq.dll": {}
-        }
-      },
-      "NUnit/3.11.0": {
-        "type": "package",
-        "compile": {
-          "lib/net45/nunit.framework.dll": {}
-        },
-        "runtime": {
-          "lib/net45/nunit.framework.dll": {}
-        },
-        "build": {
-          "build/NUnit.props": {}
-        }
-      },
-      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        }
-      },
-      "System.Threading.Tasks.Extensions/4.5.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
-        }
-      },
       "MazeModel/1.0.0": {
         "type": "project",
         "compile": {
@@ -209,64 +35,6 @@
       }
     },
     ".NETFramework,Version=v4.7.2/win-x86": {
-      "Castle.Core/4.3.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Configuration"
-        ],
-        "compile": {
-          "lib/net45/Castle.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Castle.Core.dll": {}
-        }
-      },
-      "Moq/4.10.1": {
-        "type": "package",
-        "dependencies": {
-          "Castle.Core": "4.3.1",
-          "System.Threading.Tasks.Extensions": "4.5.1"
-        },
-        "compile": {
-          "lib/net45/Moq.dll": {}
-        },
-        "runtime": {
-          "lib/net45/Moq.dll": {}
-        }
-      },
-      "NUnit/3.11.0": {
-        "type": "package",
-        "compile": {
-          "lib/net45/nunit.framework.dll": {}
-        },
-        "runtime": {
-          "lib/net45/nunit.framework.dll": {}
-        },
-        "build": {
-          "build/NUnit.props": {}
-        }
-      },
-      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
-        }
-      },
-      "System.Threading.Tasks.Extensions/4.5.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
-        }
-      },
       "MazeModel/1.0.0": {
         "type": "project",
         "compile": {
@@ -279,148 +47,6 @@
     }
   },
   "libraries": {
-    "Castle.Core/4.3.1": {
-      "sha512": "8Y/eTr6GTElAGV7eAmJuhfLhGdFpNvaNrQ9UQYDScziLmX+/BLGM+9eQr0IcdNDcPN0ADmbtwT6MgecGKy4obw==",
-      "type": "package",
-      "path": "castle.core/4.3.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ASL - Apache Software Foundation License.txt",
-        "CHANGELOG.md",
-        "LICENSE",
-        "castle.core.4.3.1.nupkg.sha512",
-        "castle.core.nuspec",
-        "lib/net35/Castle.Core.dll",
-        "lib/net35/Castle.Core.xml",
-        "lib/net40/Castle.Core.dll",
-        "lib/net40/Castle.Core.xml",
-        "lib/net45/Castle.Core.dll",
-        "lib/net45/Castle.Core.xml",
-        "lib/netstandard1.3/Castle.Core.dll",
-        "lib/netstandard1.3/Castle.Core.xml",
-        "lib/netstandard1.5/Castle.Core.dll",
-        "lib/netstandard1.5/Castle.Core.xml",
-        "readme.txt"
-      ]
-    },
-    "Moq/4.10.1": {
-      "sha512": "9VA2mB8JELXG0aDGABn2UlHB0hB8E9LFriDt4ukeS1noCEzEkQ0wpDo+w1qJxLYyhY+Z3Kf+2OgbebFL9XtLjg==",
-      "type": "package",
-      "path": "moq/4.10.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Moq.dll",
-        "lib/net45/Moq.pdb",
-        "lib/net45/Moq.xml",
-        "lib/netstandard1.3/Moq.dll",
-        "lib/netstandard1.3/Moq.pdb",
-        "lib/netstandard1.3/Moq.xml",
-        "moq.4.10.1.nupkg.sha512",
-        "moq.nuspec"
-      ]
-    },
-    "NUnit/3.11.0": {
-      "sha512": "BzGk+u02RCrysmLlSzD+okxzMQ8JRF4eFC/qijDJ8Y/FBdTrTkxkQyTFsYkG1o++pr7QpFAE4VDXDqIfZ/gBAg==",
-      "type": "package",
-      "path": "nunit/3.11.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGES.md",
-        "LICENSE.txt",
-        "NOTICES.txt",
-        "build/NUnit.props",
-        "lib/net20/NUnit.System.Linq.dll",
-        "lib/net20/nunit.framework.dll",
-        "lib/net20/nunit.framework.pdb",
-        "lib/net20/nunit.framework.xml",
-        "lib/net35/nunit.framework.dll",
-        "lib/net35/nunit.framework.pdb",
-        "lib/net35/nunit.framework.xml",
-        "lib/net40/nunit.framework.dll",
-        "lib/net40/nunit.framework.pdb",
-        "lib/net40/nunit.framework.xml",
-        "lib/net45/nunit.framework.dll",
-        "lib/net45/nunit.framework.pdb",
-        "lib/net45/nunit.framework.xml",
-        "lib/netstandard1.4/nunit.framework.dll",
-        "lib/netstandard1.4/nunit.framework.pdb",
-        "lib/netstandard1.4/nunit.framework.xml",
-        "lib/netstandard2.0/nunit.framework.dll",
-        "lib/netstandard2.0/nunit.framework.pdb",
-        "lib/netstandard2.0/nunit.framework.xml",
-        "nunit.3.11.0.nupkg.sha512",
-        "nunit.nuspec"
-      ]
-    },
-    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
-      "sha512": "YrzNWduCDHhUaSRBxHxL11UkM2fD6y8hITHis4/LbQZ6vj3vdRjoH3IoPWWC9uDXK2wHIqn+b5gv1Np/VKyM1g==",
-      "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "lib/uap10.0.16300/_._",
-        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/uap10.0.16300/_._",
-        "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
-        "system.runtime.compilerservices.unsafe.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Threading.Tasks.Extensions/4.5.1": {
-      "sha512": "WSKUTtLhPR8gllzIWO2x6l4lmAIfbyMAiTlyXAis4QBDonXK4b4S6F8zGARX4/P8wH3DH+sLdhamCiHn+fTU1A==",
-      "type": "package",
-      "path": "system.threading.tasks.extensions/4.5.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
-        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
-        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
-        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
-        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
-        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/netcoreapp2.1/_._",
-        "ref/netstandard1.0/System.Threading.Tasks.Extensions.dll",
-        "ref/netstandard1.0/System.Threading.Tasks.Extensions.xml",
-        "ref/netstandard2.0/System.Threading.Tasks.Extensions.dll",
-        "ref/netstandard2.0/System.Threading.Tasks.Extensions.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.threading.tasks.extensions.4.5.1.nupkg.sha512",
-        "system.threading.tasks.extensions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "MazeModel/1.0.0": {
       "type": "project",
       "path": "../../MazeModel/MazeModel.csproj",
@@ -429,26 +55,24 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "MazeModel >= 1.0.0",
-      "Moq >= 4.10.1",
-      "NUnit >= 3.11.0"
+      "MazeModel >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vlad_UPR\\.nuget\\packages\\": {}
+    "C:\\Users\\VlAD\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vlad_UPR\\Desktop\\GitHub Repositores\\Maze\\UnitTests\\MazeModelTests\\MazeModelTests.csproj",
+      "projectUniqueName": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\Maze\\UnitTests\\MazeModelTests\\MazeModelTests.csproj",
       "projectName": "MazeModelTests",
-      "projectPath": "C:\\Users\\Vlad_UPR\\Desktop\\GitHub Repositores\\Maze\\UnitTests\\MazeModelTests\\MazeModelTests.csproj",
-      "packagesPath": "C:\\Users\\Vlad_UPR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vlad_UPR\\Desktop\\GitHub Repositores\\Maze\\UnitTests\\MazeModelTests\\obj\\",
+      "projectPath": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\Maze\\UnitTests\\MazeModelTests\\MazeModelTests.csproj",
+      "packagesPath": "C:\\Users\\VlAD\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\Maze\\UnitTests\\MazeModelTests\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Vlad_UPR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\VlAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -461,26 +85,15 @@
       "frameworks": {
         "net472": {
           "projectReferences": {
-            "C:\\Users\\Vlad_UPR\\Desktop\\GitHub Repositores\\Maze\\MazeModel\\MazeModel.csproj": {
-              "projectPath": "C:\\Users\\Vlad_UPR\\Desktop\\GitHub Repositores\\Maze\\MazeModel\\MazeModel.csproj"
+            "C:\\Users\\VlAD\\Desktop\\EpamTasks\\Maze\\MazeModel\\MazeModel.csproj": {
+              "projectPath": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\Maze\\MazeModel\\MazeModel.csproj"
             }
           }
         }
       }
     },
     "frameworks": {
-      "net472": {
-        "dependencies": {
-          "Moq": {
-            "target": "Package",
-            "version": "[4.10.1, )"
-          },
-          "NUnit": {
-            "target": "Package",
-            "version": "[3.11.0, )"
-          }
-        }
-      }
+      "net472": {}
     },
     "runtimes": {
       "win": {

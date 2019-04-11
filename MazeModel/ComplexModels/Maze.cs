@@ -3,15 +3,20 @@ using MazeModel.Interfases;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using MazeModel.Interfases.ComplexModels;
 
 namespace MazeModel.ComplexModels
 {
     public class Maze : IMaze
     {
-        private Room[,] _rooms;
+        protected IRoom[,] _rooms;
 
         public Maze(int height, int width)
         {
+            if (height <= 0 || width <= 0)
+            {
+                throw new ArgumentException();
+            }
             Width = width;
             Height = height;
             _rooms = new Room[Height, Width];
@@ -19,13 +24,13 @@ namespace MazeModel.ComplexModels
         public int Width { get; }
         public int Height { get; }
 
-        public Room this[int y, int x]
+        public IRoom this[int y, int x]
         {
             get => _rooms[y, x];
             set => _rooms[y, x] = value;
         }
 
-        public (int, int) GetIndex(Room room)
+        public (int, int) GetIndex(IRoom room)
         {
             for (int y = 0; y < Height; y++)
             {
@@ -56,7 +61,7 @@ namespace MazeModel.ComplexModels
             }
         }
 
-        public IEnumerable<Room> GetEnumerable()
+        public IEnumerable<IRoom> GetEnumerable()
         {
             foreach (var room in _rooms)
             {
