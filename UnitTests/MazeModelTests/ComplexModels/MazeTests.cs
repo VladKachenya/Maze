@@ -42,5 +42,10 @@ namespace MazeModelTests.ComplexModels
                 }
             }
         }
+
+        public void Indexator_SetterAndGetterTest()
+        {
+
+        }
     }
 }
