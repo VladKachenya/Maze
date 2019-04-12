@@ -19,14 +19,14 @@ namespace MazeModel.ComplexModels
             }
             Width = width;
             Height = height;
-            _rooms = new Room[Height, Width];
+            _rooms = new IRoom[Height, Width];
         }
         public int Width { get; }
         public int Height { get; }
 
         public IRoom this[int y, int x]
         {
-            get => _rooms[y, x];
+            get => _rooms[y, x] ;
             set => _rooms[y, x] = value;
         }
 
@@ -36,7 +36,7 @@ namespace MazeModel.ComplexModels
             {
                 for (int x = 0; x < Width; x++)
                 {
-                    if (_rooms[y, x].Equals(room))
+                    if (_rooms[y,x] != null && _rooms[y, x].Equals(room))
                     {
                         return (y, x);
                     }
@@ -52,7 +52,7 @@ namespace MazeModel.ComplexModels
                 int count = 0;
                 foreach (var room in _rooms)
                 {
-                    if (room.Content.ElementName == Keys.CoinKey)
+                    if (room != null && room.Content.ElementName == Keys.CoinKey)
                     {
                         count++;
                     }

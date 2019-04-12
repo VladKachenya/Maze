@@ -35,3 +35,8 @@ C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeModelTests\bin\Debug\Moq.xml
 C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeModelTests\bin\Debug\nunit.framework.xml
 C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeModelTests\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeModelTests\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\Castle.Core.xml
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\Moq.xml
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\nunit.framework.xml
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelTests\bin\Debug\System.Threading.Tasks.Extensions.xml
