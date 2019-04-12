@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazeModelTests", "..\UnitTests\MazeModelTests\MazeModelTests.csproj", "{037AE43E-3094-40FD-B90A-D0E07EFA4B23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazeLogicTests", "..\UnitTests\MazeLogicTests\MazeLogicTests.csproj", "{B2C427C7-E42E-47CB-AA06-0FDF3A1BB153}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,12 +37,17 @@ Global
 		{037AE43E-3094-40FD-B90A-D0E07EFA4B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{037AE43E-3094-40FD-B90A-D0E07EFA4B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{037AE43E-3094-40FD-B90A-D0E07EFA4B23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C427C7-E42E-47CB-AA06-0FDF3A1BB153}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C427C7-E42E-47CB-AA06-0FDF3A1BB153}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C427C7-E42E-47CB-AA06-0FDF3A1BB153}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C427C7-E42E-47CB-AA06-0FDF3A1BB153}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{037AE43E-3094-40FD-B90A-D0E07EFA4B23} = {E072A561-2AAD-4318-94CB-00BBC1720768}
+		{B2C427C7-E42E-47CB-AA06-0FDF3A1BB153} = {E072A561-2AAD-4318-94CB-00BBC1720768}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D5D4CD5C-7FA4-4C23-80A3-59E497A387B7}

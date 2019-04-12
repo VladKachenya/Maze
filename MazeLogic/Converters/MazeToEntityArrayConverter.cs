@@ -39,7 +39,7 @@ namespace MazeLogic.Converters
 
         private IModelBase GetContent(IModelBase element)
         {
-            if (element is ComplexModelBase @base)
+            if (element is IComplexModelBase @base)
             {
                return @base.Content;
             }
