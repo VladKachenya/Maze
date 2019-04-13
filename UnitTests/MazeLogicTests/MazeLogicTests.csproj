@@ -61,7 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builders\CoinBuilderTests.cs" />
+    <Compile Include="Builders\HeroBuilderTests.cs" />
+    <Compile Include="Builders\CorridorBuilderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StuffForTests\MockIMazeFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

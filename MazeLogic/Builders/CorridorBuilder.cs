@@ -13,7 +13,7 @@ namespace MazeLogic.Builders
     public class CorridorBuilder : IBuilder
     {
         private readonly Func<Direction, IModelBase, IModelBase, IModelBase> _corridorFactoryFunc;
-        private IMaze _maze;
+
         private Random rand = new Random();
 
         public CorridorBuilder(Func<Direction, IModelBase, IModelBase, IModelBase> corridorFactoryFunc)
@@ -23,19 +23,12 @@ namespace MazeLogic.Builders
 
         public void Build(IMaze maze)
         {
-            _maze = maze;
-            BuildCorridors(_maze[0,0]);
-        }
-
-
-        protected void BuildCorridors(IRoom startRoom)
-        {
-            var startCell = startRoom;
+            var startCell = maze[0, 0];
             var currentCell = startCell;
             Stack<IRoom> cells = new Stack<IRoom>();
             do
             {
-                var neighbors = GetAllSealedNeighbors(currentCell);
+                var neighbors = GetAllSealedNeighbors(currentCell, maze);
                 if (neighbors.Count != 0)
                 {
                     var nextCell = GetRandomCell(neighbors);
@@ -54,25 +47,26 @@ namespace MazeLogic.Builders
             } while (true);
         }
 
-        protected List<IRoom> GetAllSealedNeighbors(IRoom room)
+
+        protected List<IRoom> GetAllSealedNeighbors(IRoom room, IMaze maze)
         {
             var res = new List<IRoom>();
-            var pos = _maze.GetIndex(room);
-            if (pos.Item1 - 1 >= 0 && _maze[pos.Item1 - 1, pos.Item2].IsSealed)
+            var pos = maze.GetIndex(room);
+            if (pos.Item1 - 1 >= 0 && maze[pos.Item1 - 1, pos.Item2].IsSealed)
             {
-                res.Add(_maze[pos.Item1 - 1, pos.Item2]);
+                res.Add(maze[pos.Item1 - 1, pos.Item2]);
             }
-            if (pos.Item1 + 1 < _maze.Height && _maze[pos.Item1 + 1, pos.Item2].IsSealed)
+            if (pos.Item1 + 1 < maze.Height && maze[pos.Item1 + 1, pos.Item2].IsSealed)
             {
-                res.Add(_maze[pos.Item1 + 1, pos.Item2]);
+                res.Add(maze[pos.Item1 + 1, pos.Item2]);
             }
-            if (pos.Item2 - 1 >= 0 && _maze[pos.Item1, pos.Item2 - 1].IsSealed)
+            if (pos.Item2 - 1 >= 0 && maze[pos.Item1, pos.Item2 - 1].IsSealed)
             {
-                res.Add(_maze[pos.Item1, pos.Item2 - 1]);
+                res.Add(maze[pos.Item1, pos.Item2 - 1]);
             }
-            if (pos.Item2 + 1 < _maze.Width && _maze[pos.Item1, pos.Item2 + 1].IsSealed)
+            if (pos.Item2 + 1 < maze.Width && maze[pos.Item1, pos.Item2 + 1].IsSealed)
             {
-                res.Add(_maze[pos.Item1, pos.Item2 + 1]);
+                res.Add(maze[pos.Item1, pos.Item2 + 1]);
             }
             return res;
         }
