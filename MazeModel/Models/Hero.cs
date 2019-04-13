@@ -1,10 +1,11 @@
 ﻿using MazeModel.Base;
 using MazeModel.Helper;
 using MazeModel.Interfases;
+using MazeModel.Interfases.Models;
 
 namespace MazeModel.Models
 {
-    public class Hero : ModelBase, ICollector, ICoinContainer, IWiner
+    public class Hero : ModelBase, IHero
     {
         private static Hero _hero;
 

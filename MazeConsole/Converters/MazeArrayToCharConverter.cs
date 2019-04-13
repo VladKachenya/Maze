@@ -5,6 +5,7 @@ using MazeModel.ComplexModels;
 using MazeModel.Helper;
 using MazeModel.Interfases;
 using MazeModel.Interfases.Base;
+using MazeModel.Interfases.ComplexModels;
 
 namespace MazeConsole.Converters
 {

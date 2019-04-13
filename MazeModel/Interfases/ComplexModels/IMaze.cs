@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using MazeModel.ComplexModels;
-using MazeModel.Interfases.ComplexModels;
+﻿using System.Collections.Generic;
 
-namespace MazeModel.Interfases
+namespace MazeModel.Interfases.ComplexModels
 {
     public interface IMaze : ICoinContainer
     {

@@ -44,6 +44,7 @@ namespace MazeModelTests.Base
             Assert.AreSame(complexModel, complexModel.Content);
         }
 
+        [Test]
         public void Content_CreateComplexModelBase_GetThis()
         {
             var complexModel = new ComplexModelBaseForTest(complexModelName);

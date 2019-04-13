@@ -5,6 +5,7 @@ using MazeModel.Base;
 using MazeModel.ComplexModels;
 using MazeModel.Helper;
 using MazeModel.Interfases;
+using MazeModel.Interfases.ComplexModels;
 using MazeModel.Models;
 
 namespace MazeLogic.Engines

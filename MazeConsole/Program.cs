@@ -7,6 +7,7 @@ using MazeModel.Helper;
 using MazeModel.Interfases;
 using MazeModel.Models;
 using System;
+using MazeModel.Interfases.ComplexModels;
 
 namespace MazeConsole
 {
@@ -25,7 +26,7 @@ namespace MazeConsole
 
             var gameBuilder = new MazeBuilder();
             // Динамически конфигурируем MazeBuilder
-            gameBuilder.Builders.Add(new CoinBuilder(10)); // Тут можем указать количество монет в лабиринте
+            gameBuilder.Builders.Add(new CoinBuilder(10, () => new Coin())); // Тут можем указать количество монет в лабиринте
             var maze = gameBuilder.ConstrainMaze(5, 10);
             var hero = Hero.GetHero;
 

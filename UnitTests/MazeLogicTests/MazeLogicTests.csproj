@@ -60,10 +60,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\CoinBuilderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MazeLogic\MazeLogic.csproj">
+      <Project>{C0ACBC04-927F-414F-8A73-EAFC537D797D}</Project>
+      <Name>MazeLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MazeModel\MazeModel.csproj">
+      <Project>{DA5B0E94-5194-4778-A292-1F9852296C2D}</Project>
+      <Name>MazeModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

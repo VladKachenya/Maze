@@ -1,6 +1,7 @@
 ﻿using MazeLogic.Interfases.Builders;
 using MazeModel.ComplexModels;
 using MazeModel.Interfases;
+using MazeModel.Interfases.ComplexModels;
 
 namespace MazeLogic.Builders
 {

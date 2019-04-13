@@ -3,6 +3,7 @@ using MazeModel.ComplexModels;
 using MazeModel.Helper;
 using MazeModel.Interfases;
 using System;
+using MazeModel.Interfases.ComplexModels;
 
 namespace MazeLogic.Engines
 {

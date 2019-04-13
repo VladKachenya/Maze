@@ -56,9 +56,9 @@
     <Compile Include="Interfases\ICollector.cs" />
     <Compile Include="Interfases\ICoinContainer.cs" />
     <Compile Include="Interfases\Base\IEntityContaining.cs" />
-    <Compile Include="Interfases\IMaze.cs" />
+    <Compile Include="Interfases\ComplexModels\IMaze.cs" />
     <Compile Include="Interfases\IOriented.cs" />
-    <Compile Include="Interfases\IWiner.cs" />
+    <Compile Include="Interfases\Models\IHero.cs" />
     <Compile Include="Models\Coin.cs" />
     <Compile Include="Models\Column.cs" />
     <Compile Include="Models\Hero.cs" />

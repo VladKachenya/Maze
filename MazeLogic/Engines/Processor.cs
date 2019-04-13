@@ -2,6 +2,7 @@
 using MazeLogic.Interfases.Engines;
 using MazeModel.Helper;
 using MazeModel.Interfases;
+using MazeModel.Interfases.ComplexModels;
 using MazeModel.Models;
 
 namespace MazeLogic.Engines

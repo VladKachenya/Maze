@@ -5,14 +5,21 @@ using MazeModel.Interfases;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using MazeModel.Interfases.Base;
 using MazeModel.Interfases.ComplexModels;
 
 namespace MazeLogic.Builders
 {
     public class CorridorBuilder : IBuilder
     {
+        private readonly Func<Direction, IModelBase, IModelBase, IModelBase> _corridorFactoryFunc;
         private IMaze _maze;
         private Random rand = new Random();
+
+        public CorridorBuilder(Func<Direction, IModelBase, IModelBase, IModelBase> corridorFactoryFunc)
+        {
+            _corridorFactoryFunc = corridorFactoryFunc;
+        }
 
         public void Build(IMaze maze)
         {
@@ -20,7 +27,8 @@ namespace MazeLogic.Builders
             BuildCorridors(_maze[0,0]);
         }
 
-        private void BuildCorridors(IRoom startRoom)
+
+        protected void BuildCorridors(IRoom startRoom)
         {
             var startCell = startRoom;
             var currentCell = startCell;
@@ -46,7 +54,7 @@ namespace MazeLogic.Builders
             } while (true);
         }
 
-        private List<IRoom> GetAllSealedNeighbors(IRoom room)
+        protected List<IRoom> GetAllSealedNeighbors(IRoom room)
         {
             var res = new List<IRoom>();
             var pos = _maze.GetIndex(room);
@@ -69,9 +77,9 @@ namespace MazeLogic.Builders
             return res;
         }
 
-        private void BrokeWall(IRoom room1, IRoom room2)
+        protected void BrokeWall(IRoom room1, IRoom room2)
         {
-            Сorridor door;
+            IModelBase door;
             var room1Sides = room1.GetEnumerable();
             var room2Sides = room2.GetEnumerable();
             Direction side = (Direction) 0;
@@ -88,28 +96,28 @@ namespace MazeLogic.Builders
             {
                 case Direction.Up:
                     {
-                        door = new Сorridor(Direction.Down, room1, room2);
+                        door =  _corridorFactoryFunc(Direction.Down, room1, room2);
                         room1.SetNeighbor(door, Direction.Up);
                         room2.SetNeighbor(door, Direction.Down);
                         break;
                     }
                 case Direction.Down:
                     {
-                        door = new Сorridor(Direction.Up, room1, room2);
+                        door = _corridorFactoryFunc(Direction.Up, room1, room2);
                         room1.SetNeighbor(door, Direction.Down);
                         room2.SetNeighbor(door, Direction.Up);
                         break;
                     }
                 case Direction.Right:
                     {
-                        door = new Сorridor(Direction.Left, room1, room2);
+                        door = _corridorFactoryFunc(Direction.Left, room1, room2);
                         room1.SetNeighbor(door, Direction.Right);
                         room2.SetNeighbor(door, Direction.Left);
                         break;
                     }
                 case Direction.Left:
                     {
-                        door = new Сorridor(Direction.Right, room1, room2);
+                        door = _corridorFactoryFunc(Direction.Right, room1, room2);
                         room1.SetNeighbor(door, Direction.Left);
                         room2.SetNeighbor(door, Direction.Right);
                         break;
@@ -117,7 +125,7 @@ namespace MazeLogic.Builders
                 default: throw new ArgumentException();
             }
         }
-        private IRoom GetRandomCell(List<IRoom> rooms)
+        protected IRoom GetRandomCell(List<IRoom> rooms)
         {
             var randIdnex = rand.Next(rooms.Count);
             return rooms[randIdnex];
