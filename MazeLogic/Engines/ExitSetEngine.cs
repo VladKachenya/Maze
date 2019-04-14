@@ -29,7 +29,7 @@ namespace MazeLogic.Engines
             if (!isExitBuild && _maze.CoinCount == 0)
             {
                 isExitBuild = true;
-                switch (_random.Next(2))
+                switch (_random.Next(3))
                 {
                     case 0:
                         {

@@ -38,7 +38,7 @@ namespace MazeLogic.Builders
                 }
                 else if (cells.Count != 0)
                 {
-                    currentCell = cells.Pop();
+                     currentCell = cells.Pop();
                 }
                 else
                 {
@@ -48,7 +48,7 @@ namespace MazeLogic.Builders
         }
 
 
-        protected List<IRoom> GetAllSealedNeighbors(IRoom room, IMaze maze)
+        protected virtual List<IRoom> GetAllSealedNeighbors(IRoom room, IMaze maze)
         {
             var res = new List<IRoom>();
             var pos = maze.GetIndex(room);
@@ -71,7 +71,7 @@ namespace MazeLogic.Builders
             return res;
         }
 
-        protected void BrokeWall(IRoom room1, IRoom room2)
+        protected virtual void BrokeWall(IRoom room1, IRoom room2)
         {
             IModelBase door;
             var room1Sides = room1.GetEnumerable();
@@ -119,7 +119,7 @@ namespace MazeLogic.Builders
                 default: throw new ArgumentException();
             }
         }
-        protected IRoom GetRandomCell(List<IRoom> rooms)
+        protected virtual IRoom GetRandomCell(List<IRoom> rooms)
         {
             var randIdnex = rand.Next(rooms.Count);
             return rooms[randIdnex];
