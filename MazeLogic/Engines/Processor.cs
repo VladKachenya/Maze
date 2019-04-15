@@ -20,7 +20,6 @@ namespace MazeLogic.Engines
             ConfigurationList = new List<IEngine>();
             ConfigurationList.Add(new MoveEngine(hero, maze));
             ConfigurationList.Add(new CollectionEngine(hero, maze));
-
         }
         public void Move(Direction direction)
         {
