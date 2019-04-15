@@ -64,6 +64,7 @@
     <Compile Include="Builders\HeroBuilderTests.cs" />
     <Compile Include="Builders\CorridorBuilderTests.cs" />
     <Compile Include="Builders\WallBuilderTests.cs" />
+    <Compile Include="Engines\MoveEngineTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -79,9 +80,7 @@
       <Name>MazeModel</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Engines\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
