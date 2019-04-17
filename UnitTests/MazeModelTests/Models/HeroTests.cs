@@ -7,19 +7,11 @@ namespace MazeModelTests.Models
     [TestFixture]
     public class HeroTests
     {
-        [Test]
-        public void IsHeroSingleton()
-        {
-            var hero1 = Hero.GetHero;
-            var hero2 = Hero.GetHero;
-
-            Assert.AreSame(hero1, hero2);
-        }
 
         [Test]
         public void ElementNameIsHero()
         {
-            var hero = Hero.GetHero;
+            var hero = new Hero();
 
             Assert.AreEqual(hero.ElementName, Keys.HeroKey);
         }
@@ -30,7 +22,7 @@ namespace MazeModelTests.Models
         [TestCase(4)]
         public void Collect_HeroIncrementsCoinCount(int count)
         {
-            var hero = Hero.GetHero;
+            var hero = new Hero();
             var res = hero.CoinCount + count;
             for (int i = 0; i < count; i++)
             {

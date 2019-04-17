@@ -10,18 +10,16 @@ namespace MazeLogic.Builders
 {
     public class HeroBuilder : IBuilder
     {
-        private readonly Func<IHero> _heroFactoryFunc;
+        private readonly IHero _hero;
 
-        public HeroBuilder(Func<IHero> heroFactoryFunc)
+        public HeroBuilder(IHero hero)
         {
-            _heroFactoryFunc = heroFactoryFunc;
+            _hero = hero;
         }
 
         public void Build(IMaze maze)
         {
-            var hero = _heroFactoryFunc();//Hero.GetHero;
-            hero.IsWin = false;
-            maze[0, 0].Content = hero;
+            maze[0, 0].Content = _hero;
         }
     }
 }

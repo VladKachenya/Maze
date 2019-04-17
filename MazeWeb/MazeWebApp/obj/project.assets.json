@@ -12557,11 +12557,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\MazeWeb\\MazeWebApp\\MazeWebApp.csproj",
+      "projectUniqueName": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\Maze\\MazeWeb\\MazeWebApp\\MazeWebApp.csproj",
       "projectName": "MazeWebApp",
-      "projectPath": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\MazeWeb\\MazeWebApp\\MazeWebApp.csproj",
+      "projectPath": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\Maze\\MazeWeb\\MazeWebApp\\MazeWebApp.csproj",
       "packagesPath": "C:\\Users\\VlAD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\MazeWeb\\MazeWebApp\\obj\\",
+      "outputPath": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\Maze\\MazeWeb\\MazeWebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12580,8 +12580,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\VlAD\\Desktop\\EpamTasks\\MazeWeb\\Dal\\Dal.csproj": {
-              "projectPath": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\MazeWeb\\Dal\\Dal.csproj"
+            "C:\\Users\\VlAD\\Desktop\\EpamTasks\\Maze\\MazeWeb\\Dal\\Dal.csproj": {
+              "projectPath": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\Maze\\MazeWeb\\Dal\\Dal.csproj"
             }
           }
         }

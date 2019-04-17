@@ -11,7 +11,6 @@ namespace MazeLogicTests.Builders
     [TestFixture]
     public class HeroBuilderTests
     {
-        private Mock<Func<IHero>> _heroMockFactory;
         private Mock<IHero> _heroMock;
         private Mock<IMaze> _mazeMock;
         private Mock<IRoom> _roomMock;
@@ -19,7 +18,6 @@ namespace MazeLogicTests.Builders
         [SetUp]
         public void SetUp()
         {
-            _heroMockFactory = new Mock<Func<IHero>>();
             _mazeMock = new Mock<IMaze>();
             _heroMock = new Mock<IHero>();
             _roomMock = new Mock<IRoom>();
@@ -33,24 +31,11 @@ namespace MazeLogicTests.Builders
             bool isSerHeroToMazeCounter = false;
             _roomMock.SetupSet(a => a.Content).
                 Callback((obj) => isSerHeroToMazeCounter = obj.Equals(_heroMock.Object));
-            _heroMockFactory.Setup(a => a()).Returns(() => _heroMock.Object).Callback(() => getHeroCounter++);
 
-            new HeroBuilder(_heroMockFactory.Object).Build(_mazeMock.Object);
+            new HeroBuilder(_heroMock.Object).Build(_mazeMock.Object);
 
             Assert.IsTrue(isSerHeroToMazeCounter);
-            Assert.AreEqual(getHeroCounter, 1);
         }
 
-        [Test]
-        public void Build_HeroIsWinResetTest()
-        {
-            bool isHeroWin = true;
-            _heroMock.SetupSet(a => a.IsWin).Callback((isWin) => isHeroWin = isWin);
-            _heroMockFactory.Setup(a => a()).Returns(() => _heroMock.Object);
-
-            new HeroBuilder(_heroMockFactory.Object).Build(_mazeMock.Object);
-
-            Assert.IsFalse(isHeroWin);
-        }
     }
 }

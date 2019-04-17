@@ -24,13 +24,9 @@ namespace MazeConsole
             _converter = new MazeToCharConverter();
             _drawer = new SimpleDrawer();
 
-            var gameBuilder = new MazeBuilder();
-            // Динамически конфигурируем MazeBuilder
-            gameBuilder.Builders.Add(new CoinBuilder(10, () => new Coin())); // Тут можем указать количество монет в лабиринте
-            var maze = gameBuilder.ConstrainMaze(5, 10);
-            var hero = Hero.GetHero;
-
-            var processor = GetProcessor(maze, hero);
+            var hero = new Hero();
+            var maze = new MazeBuilder(hero).ConstrainMaze(5, 10);
+            var processor = new Processor(hero, maze);
 
             Draw(maze, hero);
             ConsoleKeyInfo key;
@@ -76,8 +72,9 @@ namespace MazeConsole
                         }
                     case ConsoleKey.R:
                         {
-                            maze = gameBuilder.ConstrainMaze(5, 10);
-                            processor = GetProcessor(maze, Hero.GetHero);
+                            hero = new Hero();
+                            maze = new MazeBuilder(hero).ConstrainMaze(5, 10);
+                            processor = new Processor(hero, maze);
                             break;
                         }
                 }
@@ -91,14 +88,6 @@ namespace MazeConsole
             _drawer.Draw(_converter.Convert(maze));
             Console.WriteLine($"Heros skore {hero.CoinCount}");
             Console.WriteLine($"Maze skore {maze.CoinCount}");
-        }
-
-        private static Processor GetProcessor(IMaze maze, Hero hero)
-        {
-            var processor = new Processor(hero, maze);
-            processor.ConfigurationList.Add(new ExitSetEngine(maze));
-            processor.ConfigurationList.Add(new VictoryEngine(hero, maze));
-            return processor;
         }
     }
 }

@@ -3620,11 +3620,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\MazeWeb\\Dal\\Dal.csproj",
+      "projectUniqueName": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\Maze\\MazeWeb\\Dal\\Dal.csproj",
       "projectName": "Dal",
-      "projectPath": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\MazeWeb\\Dal\\Dal.csproj",
+      "projectPath": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\Maze\\MazeWeb\\Dal\\Dal.csproj",
       "packagesPath": "C:\\Users\\VlAD\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\MazeWeb\\Dal\\obj\\",
+      "outputPath": "C:\\Users\\VlAD\\Desktop\\EpamTasks\\Maze\\MazeWeb\\Dal\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

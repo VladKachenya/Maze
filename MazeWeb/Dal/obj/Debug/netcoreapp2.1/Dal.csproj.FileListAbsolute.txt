@@ -20,3 +20,14 @@ C:\Users\VlAD\Desktop\EpamTasks\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.Assembly
 C:\Users\VlAD\Desktop\EpamTasks\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.AssemblyInfo.cs
 C:\Users\VlAD\Desktop\EpamTasks\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.dll
 C:\Users\VlAD\Desktop\EpamTasks\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\Dal.deps.json
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\Dal.runtimeconfig.json
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\Dal.runtimeconfig.dev.json
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\Dal.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\Dal.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.csprojAssemblyReference.cache
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.csproj.CoreCompileInputs.cache
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.AssemblyInfoInputs.cache
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.AssemblyInfo.cs
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.pdb

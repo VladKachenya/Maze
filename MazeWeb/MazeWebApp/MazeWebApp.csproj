@@ -14,4 +14,13 @@
     <ProjectReference Include="..\Dal\Dal.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="MazeLogic">
+      <HintPath>..\..\MazeLogic\bin\Debug\MazeLogic.dll</HintPath>
+    </Reference>
+    <Reference Include="MazeModel">
+      <HintPath>..\..\MazeLogic\bin\Debug\MazeModel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
