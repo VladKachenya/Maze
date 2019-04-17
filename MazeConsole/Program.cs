@@ -77,7 +77,7 @@ namespace MazeConsole
                     case ConsoleKey.R:
                         {
                             maze = gameBuilder.ConstrainMaze(5, 10);
-                            processor = GetProcessor(maze, hero);
+                            processor = GetProcessor(maze, Hero.GetHero);
                             break;
                         }
                 }
