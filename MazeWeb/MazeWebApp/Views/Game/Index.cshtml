@@ -1,0 +1,18 @@
+﻿@model List<Game>
+@{
+    ViewData["Title"] = "Game Page";
+}
+
+<table class="table">
+    <tr>
+        <td>#</td>
+        <td>Date</td>
+    </tr>
+    @foreach (var game in Model)
+    {
+    <tr>
+        <td>@game.Id</td>
+        <td>@game.Date</td>
+    </tr>
+    }
+</table>

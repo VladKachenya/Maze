@@ -1,0 +1,11 @@
+C:\Users\VlAD\Desktop\EpamTasks\Dal\bin\Debug\netcoreapp2.2\Dal.deps.json
+C:\Users\VlAD\Desktop\EpamTasks\Dal\bin\Debug\netcoreapp2.2\Dal.dll
+C:\Users\VlAD\Desktop\EpamTasks\Dal\obj\Debug\netcoreapp2.2\Dal.csprojAssemblyReference.cache
+C:\Users\VlAD\Desktop\EpamTasks\Dal\obj\Debug\netcoreapp2.2\Dal.csproj.CoreCompileInputs.cache
+C:\Users\VlAD\Desktop\EpamTasks\Dal\obj\Debug\netcoreapp2.2\Dal.AssemblyInfoInputs.cache
+C:\Users\VlAD\Desktop\EpamTasks\Dal\obj\Debug\netcoreapp2.2\Dal.AssemblyInfo.cs
+C:\Users\VlAD\Desktop\EpamTasks\Dal\bin\Debug\netcoreapp2.2\Dal.runtimeconfig.json
+C:\Users\VlAD\Desktop\EpamTasks\Dal\bin\Debug\netcoreapp2.2\Dal.runtimeconfig.dev.json
+C:\Users\VlAD\Desktop\EpamTasks\Dal\bin\Debug\netcoreapp2.2\Dal.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Dal\obj\Debug\netcoreapp2.2\Dal.dll
+C:\Users\VlAD\Desktop\EpamTasks\Dal\obj\Debug\netcoreapp2.2\Dal.pdb

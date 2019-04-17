@@ -1,0 +1,29 @@
+﻿@model Customer
+@{
+    ViewData["Title"] = "Gustomer game profile";
+}
+
+<h2>@Model.Name</h2>
+<h5>@Model.Name score: @Model.Score</h5>
+<table class="table">
+    <tr>
+        <td>#</td>
+        <td>Date</td>
+    </tr>
+    @foreach (var game in Model.Games)
+    {
+        <tr>
+            <td>@game.Id</td>
+            <td>@game.Date</td>
+        </tr>
+    }
+</table>
+@using (Html.BeginForm("Play", "Game", FormMethod.Post))
+{
+    <div >
+        <input type="hidden" id="GamerId" name="Gamer.Id" value="@Model.Id" />
+        <input class="btn btn-success" type="submit" value="Play" />
+    </div>
+}
+
+

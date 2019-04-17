@@ -1,0 +1,24 @@
+﻿@model List<Dal.Model.Customer>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<table class="table">
+    <tr>
+        <td><a asp-action="Index" asp-route-sortOrder="@ViewBag.IdSort">#</a></td>
+        <td><a asp-action="Index" asp-route-sortOrder="@ViewBag.NameSort">Name</a></td>
+        <td><a asp-action="Index" asp-route-sortOrder="@ViewBag.ScoreSort">Score</a></td>
+        <td>Games</td>
+    </tr>
+    @foreach (var customer in Model)
+    {
+    <tr>
+        <td>@customer.Id</td>
+        <td>@customer.Name</td>
+        <td>@customer.Score</td>
+        <td><a asp-controller="Game" asp-action="GustomerGameProfile" asp-route-customerId="@customer.Id">Go to games</a></td>
+    </tr>
+    }
+</table>
