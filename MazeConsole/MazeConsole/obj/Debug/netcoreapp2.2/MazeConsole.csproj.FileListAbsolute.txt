@@ -1,0 +1,16 @@
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\bin\Debug\netcoreapp2.2\MazeConsole.deps.json
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\bin\Debug\netcoreapp2.2\MazeConsole.runtimeconfig.json
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\bin\Debug\netcoreapp2.2\MazeConsole.runtimeconfig.dev.json
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\bin\Debug\netcoreapp2.2\MazeConsole.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\bin\Debug\netcoreapp2.2\MazeConsole.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\bin\Debug\netcoreapp2.2\MazeLogicCore.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\bin\Debug\netcoreapp2.2\MazeModelCore.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\bin\Debug\netcoreapp2.2\MazeLogicCore.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\bin\Debug\netcoreapp2.2\MazeModelCore.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\obj\Debug\netcoreapp2.2\MazeConsole.csprojAssemblyReference.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\obj\Debug\netcoreapp2.2\MazeConsole.csproj.CoreCompileInputs.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\obj\Debug\netcoreapp2.2\MazeConsole.AssemblyInfoInputs.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\obj\Debug\netcoreapp2.2\MazeConsole.AssemblyInfo.cs
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\obj\Debug\netcoreapp2.2\MazeConsole.csproj.CopyComplete
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\obj\Debug\netcoreapp2.2\MazeConsole.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeConsole\MazeConsole\obj\Debug\netcoreapp2.2\MazeConsole.pdb

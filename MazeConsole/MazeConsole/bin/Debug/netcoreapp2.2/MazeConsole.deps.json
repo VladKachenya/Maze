@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "MazeConsole/1.0.0": {
+        "dependencies": {
+          "MazeLogicCore": "1.0.0",
+          "MazeModelCore": "1.0.0"
+        },
+        "runtime": {
+          "MazeConsole.dll": {}
+        }
+      },
+      "MazeLogicCore/1.0.0": {
+        "dependencies": {
+          "MazeModelCore": "1.0.0"
+        },
+        "runtime": {
+          "MazeLogicCore.dll": {}
+        }
+      },
+      "MazeModelCore/1.0.0": {
+        "runtime": {
+          "MazeModelCore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MazeConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MazeLogicCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MazeModelCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

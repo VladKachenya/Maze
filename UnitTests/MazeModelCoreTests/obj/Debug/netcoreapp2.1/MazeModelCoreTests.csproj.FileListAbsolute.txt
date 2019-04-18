@@ -1,0 +1,17 @@
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\obj\Debug\netcoreapp2.1\MazeModelCoreTests.csprojAssemblyReference.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\obj\Debug\netcoreapp2.1\MazeModelCoreTests.csproj.CoreCompileInputs.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\obj\Debug\netcoreapp2.1\MazeModelCoreTests.AssemblyInfoInputs.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\obj\Debug\netcoreapp2.1\MazeModelCoreTests.AssemblyInfo.cs
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\bin\Debug\netcoreapp2.1\MazeModelCoreTests.deps.json
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\bin\Debug\netcoreapp2.1\MazeModelCoreTests.runtimeconfig.json
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\bin\Debug\netcoreapp2.1\MazeModelCoreTests.runtimeconfig.dev.json
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\bin\Debug\netcoreapp2.1\MazeModelCoreTests.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\bin\Debug\netcoreapp2.1\MazeModelCoreTests.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\bin\Debug\netcoreapp2.1\MazeModelCore.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\bin\Debug\netcoreapp2.1\MazeModelCore.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\obj\Debug\netcoreapp2.1\MazeModelCoreTests.csproj.CopyComplete
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\obj\Debug\netcoreapp2.1\MazeModelCoreTests.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeModelCoreTests\obj\Debug\netcoreapp2.1\MazeModelCoreTests.pdb

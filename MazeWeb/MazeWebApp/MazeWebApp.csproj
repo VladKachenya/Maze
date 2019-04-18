@@ -11,6 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\MazeCore\MazeLogicCore\MazeLogicCore.csproj" />
+    <ProjectReference Include="..\..\MazeCore\MazeModelCore\MazeModelCore.csproj" />
     <ProjectReference Include="..\Dal\Dal.csproj" />
   </ItemGroup>
 

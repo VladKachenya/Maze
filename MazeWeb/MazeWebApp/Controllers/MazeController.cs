@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MazeModelCore.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MazeWebApp.Controllers
 {
