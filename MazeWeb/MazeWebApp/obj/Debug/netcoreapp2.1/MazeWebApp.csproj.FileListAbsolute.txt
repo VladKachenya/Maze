@@ -101,3 +101,8 @@ C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\obj\Debug\n
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\obj\Debug\netcoreapp2.1\MazeWebApp.pdb
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\MazeLogicCore.dll
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\MazeLogicCore.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\MazeLogicCore.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\MazeModelCore.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\MazeLogicCore.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\MazeModelCore.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\MazeWebApp\obj\Debug\netcoreapp2.1\Razor\Views\Maze\Index.g.cshtml.cs

@@ -9,6 +9,14 @@ using Dal.Interfases.Service;
 using Dal.Model.Base;
 using Dal.Repository;
 using Dal.Service;
+using MazeLogicCore.Builders;
+using MazeLogicCore.Converters;
+using MazeLogicCore.Interfases.Builders;
+using MazeLogicCore.Interfases.Converters;
+using MazeModelCore.Interfases.Base;
+using MazeModelCore.Interfases.ComplexModels;
+using MazeModelCore.Interfases.Models;
+using MazeModelCore.Models;
 using MazeWebApp.Helper.CustomerAttribute;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -41,6 +49,9 @@ namespace MazeWebApp
             RegesterByAttribute(services, typeof(UseDi));
             RegesterByAttribute(services, typeof(MazeWebDi));
 
+            services.AddScoped<IHero, Hero>();
+            services.AddScoped<IMazeBuilder, MazeBuilder>();
+            services.AddScoped<IConverter<IMaze, IModelBase[,]>, MazeToEntityArrayConverter>();
 
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<DataContext>(options => options.UseSqlServer(connection));

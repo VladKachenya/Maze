@@ -12,9 +12,9 @@ namespace MazeWebApp.Converters
     public class MazeToCharConverter : IMazeToCharConverter
     {
         private IConverter<IMaze, IModelBase[,]> _modelToArrComverter;
-        public MazeToCharConverter()
+        public MazeToCharConverter(IConverter<IMaze, IModelBase[,]> modelToArrComverter)
         {
-            _modelToArrComverter = new MazeToEntityArrayConverter();
+            _modelToArrComverter = modelToArrComverter;
         }
         public char[,] Convert(IMaze mazeObject)
         {

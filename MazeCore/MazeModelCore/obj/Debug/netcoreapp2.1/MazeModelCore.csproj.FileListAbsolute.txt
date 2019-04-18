@@ -16,3 +16,12 @@ C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeCore\MazeModelCore\obj\Deb
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeCore\MazeModelCore\obj\Debug\netcoreapp2.1\MazeModelCore.AssemblyInfo.cs
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeCore\MazeModelCore\obj\Debug\netcoreapp2.1\MazeModelCore.dll
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeCore\MazeModelCore\obj\Debug\netcoreapp2.1\MazeModelCore.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeModelCore\bin\Debug\netcoreapp2.1\MazeModelCore.deps.json
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeModelCore\bin\Debug\netcoreapp2.1\MazeModelCore.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeModelCore\bin\Debug\netcoreapp2.1\MazeModelCore.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeModelCore\obj\Debug\netcoreapp2.1\MazeModelCore.csprojAssemblyReference.cache
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeModelCore\obj\Debug\netcoreapp2.1\MazeModelCore.csproj.CoreCompileInputs.cache
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeModelCore\obj\Debug\netcoreapp2.1\MazeModelCore.AssemblyInfoInputs.cache
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeModelCore\obj\Debug\netcoreapp2.1\MazeModelCore.AssemblyInfo.cs
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeModelCore\obj\Debug\netcoreapp2.1\MazeModelCore.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeModelCore\obj\Debug\netcoreapp2.1\MazeModelCore.pdb

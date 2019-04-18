@@ -22,3 +22,15 @@ C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeCore\MazeLogicCore\obj\Deb
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeCore\MazeLogicCore\obj\Debug\netcoreapp2.1\MazeLogicCore.csproj.CopyComplete
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeCore\MazeLogicCore\obj\Debug\netcoreapp2.1\MazeLogicCore.dll
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeCore\MazeLogicCore\obj\Debug\netcoreapp2.1\MazeLogicCore.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeLogicCore\bin\Debug\netcoreapp2.1\MazeLogicCore.deps.json
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeLogicCore\bin\Debug\netcoreapp2.1\MazeLogicCore.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeLogicCore\bin\Debug\netcoreapp2.1\MazeLogicCore.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeLogicCore\bin\Debug\netcoreapp2.1\MazeModelCore.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeLogicCore\bin\Debug\netcoreapp2.1\MazeModelCore.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeLogicCore\obj\Debug\netcoreapp2.1\MazeLogicCore.csprojAssemblyReference.cache
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeLogicCore\obj\Debug\netcoreapp2.1\MazeLogicCore.csproj.CoreCompileInputs.cache
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeLogicCore\obj\Debug\netcoreapp2.1\MazeLogicCore.AssemblyInfoInputs.cache
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeLogicCore\obj\Debug\netcoreapp2.1\MazeLogicCore.AssemblyInfo.cs
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeLogicCore\obj\Debug\netcoreapp2.1\MazeLogicCore.csproj.CopyComplete
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeLogicCore\obj\Debug\netcoreapp2.1\MazeLogicCore.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeCore\MazeLogicCore\obj\Debug\netcoreapp2.1\MazeLogicCore.pdb

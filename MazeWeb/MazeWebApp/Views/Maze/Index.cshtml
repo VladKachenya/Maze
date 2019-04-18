@@ -1,0 +1,18 @@
+﻿@model char[,]
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Game controller</h2>
+<table>
+    @for (int y = 0; y < Model.GetUpperBound(0) + 1; y++)
+    {
+        <tr class="row">
+            @for (int x = 0; x < Model.GetUpperBound(1) + 1; x++)
+            {
+                <td class="cell">@Model[y, x]</td>
+            }
+        </tr>
+    }
+</table>

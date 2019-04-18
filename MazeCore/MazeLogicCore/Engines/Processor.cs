@@ -2,17 +2,18 @@
 using MazeLogicCore.Interfases.Engines;
 using MazeModelCore.Helper;
 using MazeModelCore.Interfases.ComplexModels;
+using MazeModelCore.Interfases.Models;
 using MazeModelCore.Models;
 
 namespace MazeLogicCore.Engines
 {
     public class Processor : IEngine
     {
-        private Hero _hero;
+        private IHero _hero;
         private IMaze _maze;
         public List<IEngine> ConfigurationList { get; }
 
-        public Processor(Hero hero, IMaze maze)
+        public Processor(IHero hero, IMaze maze)
         {
             _hero = hero;
             _maze = maze;

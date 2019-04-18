@@ -17,3 +17,22 @@ C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeLogicCoreTests\b
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeLogicCoreTests\obj\Debug\netcoreapp2.1\MazeLogicCoreTests.csproj.CopyComplete
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeLogicCoreTests\obj\Debug\netcoreapp2.1\MazeLogicCoreTests.dll
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\UnitTests\MazeLogicCoreTests\obj\Debug\netcoreapp2.1\MazeLogicCoreTests.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\bin\Debug\netcoreapp2.1\MazeLogicCoreTests.deps.json
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\bin\Debug\netcoreapp2.1\MazeLogicCoreTests.runtimeconfig.json
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\bin\Debug\netcoreapp2.1\MazeLogicCoreTests.runtimeconfig.dev.json
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\bin\Debug\netcoreapp2.1\MazeLogicCoreTests.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\bin\Debug\netcoreapp2.1\MazeLogicCoreTests.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\bin\Debug\netcoreapp2.1\MazeLogicCore.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\bin\Debug\netcoreapp2.1\MazeModelCore.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\bin\Debug\netcoreapp2.1\MazeLogicCore.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\bin\Debug\netcoreapp2.1\MazeModelCore.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\obj\Debug\netcoreapp2.1\MazeLogicCoreTests.csprojAssemblyReference.cache
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\obj\Debug\netcoreapp2.1\MazeLogicCoreTests.csproj.CoreCompileInputs.cache
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\obj\Debug\netcoreapp2.1\MazeLogicCoreTests.AssemblyInfoInputs.cache
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\obj\Debug\netcoreapp2.1\MazeLogicCoreTests.AssemblyInfo.cs
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\obj\Debug\netcoreapp2.1\MazeLogicCoreTests.csproj.CopyComplete
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\obj\Debug\netcoreapp2.1\MazeLogicCoreTests.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\UnitTests\MazeLogicCoreTests\obj\Debug\netcoreapp2.1\MazeLogicCoreTests.pdb

@@ -8,8 +8,6 @@ namespace MazeModelCoreTests.Base
 {
     internal class ComplexModelBaseForTest : ComplexModelBase
     {
-
-
         public ComplexModelBaseForTest(string elementName) : base(elementName)
         {
         }
@@ -23,62 +21,63 @@ namespace MazeModelCoreTests.Base
     [TestFixture]
     public class ComplexModelBaseTests
     {
-        private string complexModelName;
+        private string _complexModelName;
+        private ComplexModelBaseForTest _complexModelBaseForTest;
 
         [SetUp]
         public void SetUp()
         {
-            complexModelName = "ComplexModelBaseForTest";
+            _complexModelName = "ComplexModelBaseForTest";
+            _complexModelBaseForTest = new ComplexModelBaseForTest(_complexModelName);
         }
 
         [Test]
         public void Ctor_PassingComplexModelName_ElementNameRetetnComplexModelName()
         {
-            var complexModel = new ComplexModelBaseForTest(complexModelName);
-            Assert.AreSame(complexModelName, complexModel.ElementName);
+            Assert.AreSame(_complexModelName, _complexModelBaseForTest.ElementName);
         }
         [Test]
         public void Content_SetNull_GetThis()
         {
-            var complexModel = new ComplexModelBaseForTest(complexModelName) { Content = null };
-            Assert.AreSame(complexModel, complexModel.Content);
+            _complexModelBaseForTest.Content = null;
+            Assert.AreSame(_complexModelBaseForTest, _complexModelBaseForTest.Content);
         }
 
         [Test]
         public void Content_CreateComplexModelBase_GetThis()
         {
-            var complexModel = new ComplexModelBaseForTest(complexModelName);
-            Assert.AreSame(complexModel, complexModel.Content);
+            Assert.AreSame(_complexModelBaseForTest, _complexModelBaseForTest.Content);
         }
 
         [Test]
         public void Content_SetIModelBase_GetIModelBase()
         {
             var mock = new Mock<IModelBase>();
-            var testComplexModel = new ComplexModelBaseForTest(complexModelName) { Content = mock.Object };
-            Assert.AreSame(mock.Object, testComplexModel.Content);
+            _complexModelBaseForTest.Content = mock.Object;
+            Assert.AreSame(mock.Object, _complexModelBaseForTest.Content);
         }
 
         [Test]
         public void IsEmpty_SetNullContent_GetTrue()
         {
-            var complexModel = new ComplexModelBaseForTest(complexModelName) { Content = null };
-            Assert.AreEqual(true, complexModel.IsEmpty);
+            _complexModelBaseForTest.Content = new Mock<IModelBase>().Object;
+            Assert.AreEqual(false, _complexModelBaseForTest.IsEmpty);
+            _complexModelBaseForTest.Content = null;
+            Assert.AreEqual(true, _complexModelBaseForTest.IsEmpty);
         }
 
         [Test]
         public void IsEmpty_CreateComplexModelBase_GetTrue()
         {
-            var complexModel = new ComplexModelBaseForTest(complexModelName);
-            Assert.AreEqual(true, complexModel.IsEmpty);
+            Assert.AreEqual(true, _complexModelBaseForTest.IsEmpty);
         }
 
         [Test]
         public void IsEmpty_SetNotNullContent_GetFalse()
         {
             var mock = new Mock<IModelBase>();
-            var complexModel = new ComplexModelBaseForTest(complexModelName) { Content = mock.Object };
-            Assert.AreEqual(false, complexModel.IsEmpty);
+            _complexModelBaseForTest.Content = mock.Object;
+            Assert.AreEqual(false, _complexModelBaseForTest.IsEmpty);
         }
 
 
@@ -89,8 +88,7 @@ namespace MazeModelCoreTests.Base
         [TestCase(0)]
         public void Indexator_GetNotSetEntity_NullReterned(Direction direction)
         {
-            var complexModel = new ComplexModelBaseForTest(complexModelName);
-            Assert.IsNull(complexModel[direction]);
+            Assert.IsNull(_complexModelBaseForTest[direction]);
         }
 
         [TestCase(Direction.Down)]
@@ -100,10 +98,9 @@ namespace MazeModelCoreTests.Base
         [TestCase(0)]
         public void Indexator_GetPuttedEntity_EntityReterned(Direction direction)
         {
-            var complexModel = new ComplexModelBaseForTest(complexModelName);
             var mock = new Mock<IModelBase>();
-            complexModel.SetEntity(direction, mock.Object);
-            Assert.AreEqual(complexModel[direction], mock.Object);
+            _complexModelBaseForTest.SetEntity(direction, mock.Object);
+            Assert.AreEqual(_complexModelBaseForTest[direction], mock.Object);
         }
 
 

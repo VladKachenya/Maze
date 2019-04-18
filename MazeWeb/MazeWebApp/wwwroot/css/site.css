@@ -35,3 +35,16 @@ body {
         display: none;
     }
 }
+
+.cell {
+    width: 15px;
+    height: 15px;
+    white-space: nowrap;
+    border-bottom: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    /*text-align: center;*/
+}
+
+.row {
+    display: flex;
+}
