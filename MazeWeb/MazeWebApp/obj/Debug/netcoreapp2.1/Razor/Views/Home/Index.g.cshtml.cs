@@ -67,7 +67,7 @@ using Dal.Model;
             WriteLiteral("\r\n\r\n\r\n<table class=\"table\">\r\n    <tr>\r\n        <td>");
             EndContext();
             BeginContext(129, 65, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c2efb9ed852749f286c2936105222c2a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "876410f94e43456d8d99f74ed1f27159", async() => {
                 BeginContext(189, 1, true);
                 WriteLiteral("#");
                 EndContext();
@@ -102,7 +102,7 @@ using Dal.Model;
             WriteLiteral("</td>\r\n        <td>");
             EndContext();
             BeginContext(213, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9900504cc1ab4bc0b8d389ccb7dfc9c1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d414f6bd73354018b5b8b856c02c5075", async() => {
                 BeginContext(275, 4, true);
                 WriteLiteral("Name");
                 EndContext();
@@ -137,7 +137,7 @@ using Dal.Model;
             WriteLiteral("</td>\r\n        <td>");
             EndContext();
             BeginContext(302, 72, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3dfe3ff59b5346f88748f4844bd5e950", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "18068bb3e1a44ce7853453d82905a492", async() => {
                 BeginContext(365, 5, true);
                 WriteLiteral("Score");
                 EndContext();
@@ -211,7 +211,7 @@ using Dal.Model;
             WriteLiteral("</td>\r\n        <td>");
             EndContext();
             BeginContext(581, 109, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "394e8290b5c8489f9d44a3b48be998cc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc526d272dc945cc9ba13c72d9f343f7", async() => {
                 BeginContext(675, 11, true);
                 WriteLiteral("Go to games");
                 EndContext();

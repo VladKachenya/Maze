@@ -30,9 +30,7 @@
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9",
-          "MazeLogic": "1.0.0.0",
-          "MazeModel": "1.0.0.0"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9"
         },
         "runtime": {
           "MazeWebApp.dll": {}
@@ -502,28 +500,6 @@
         },
         "compile": {
           "MazeModelCore.dll": {}
-        }
-      },
-      "MazeLogic/1.0.0.0": {
-        "runtime": {
-          "MazeLogic.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        },
-        "compile": {
-          "MazeLogic.dll": {}
-        }
-      },
-      "MazeModel/1.0.0.0": {
-        "runtime": {
-          "MazeModel.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        },
-        "compile": {
-          "MazeModel.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3776,16 +3752,6 @@
     },
     "MazeModelCore/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "MazeLogic/1.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "MazeModel/1.0.0.0": {
-      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },

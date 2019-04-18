@@ -72,13 +72,9 @@ C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\bin\Debug\n
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\MazeWebApp.Views.dll
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\MazeWebApp.Views.pdb
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\Dal.dll
-C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\MazeLogic.dll
-C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\MazeModel.dll
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\MazeModelCore.dll
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\Dal.pdb
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\MazeModelCore.pdb
-C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\MazeLogic.pdb
-C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\bin\Debug\netcoreapp2.1\MazeModel.pdb
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\obj\Debug\netcoreapp2.1\MazeWebApp.csprojAssemblyReference.cache
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\obj\Debug\netcoreapp2.1\MazeWebApp.csproj.CoreCompileInputs.cache
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebApp\obj\Debug\netcoreapp2.1\MazeWebApp.RazorAssemblyInfo.cache

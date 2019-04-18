@@ -9,6 +9,7 @@ using Dal.Interfases.Service;
 using Dal.Model.Base;
 using Dal.Repository;
 using Dal.Service;
+using MazeWebApp.Helper.CustomerAttribute;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -37,7 +38,9 @@ namespace MazeWebApp
             //services.AddScoped<IPlayService, PlayService>();
 
             RegistretionRepository(services);
-            RegesterByAttribute(services, "Dal", typeof(UseDi).Name);
+            RegesterByAttribute(services, typeof(UseDi));
+            RegesterByAttribute(services, typeof(MazeWebDi));
+
 
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<DataContext>(options => options.UseSqlServer(connection));
@@ -55,7 +58,7 @@ namespace MazeWebApp
             foreach (var interfase in iRepositoryTypes)
             {
                 var repositoryType =
-                    dalTypes.SingleOrDefault(t => t.IsClass && t.GetInterfaces().Any(i => i.Name == interfase.Name));
+                    dalTypes.SingleOrDefault(t => t.IsClass && t.GetInterfaces().Any(i => i.FullName == interfase.FullName));
                 if (repositoryType != null)
                 {
                     services.AddScoped(interfase, repositoryType);
@@ -63,18 +66,17 @@ namespace MazeWebApp
             }
         }
 
-        public void RegesterByAttribute(IServiceCollection service, string assemblyName, string attribyteName)
+        public void RegesterByAttribute(IServiceCollection service, Type attribyte)
         {
-            var dalTypes = AppDomain.CurrentDomain.GetAssemblies()
-                .Single(assembly => assembly.GetName().Name == assemblyName).GetTypes();
+            var dalTypes = Assembly.GetAssembly(attribyte).GetTypes();
             var markedInterfaces = dalTypes.Where(t =>
-                t.IsInterface && t.GetCustomAttributes().Any(at => at.GetType().Name == attribyteName));
+                t.IsInterface && t.GetCustomAttributes().Any(at => at.GetType().FullName == attribyte.FullName));
             var markedClasses = dalTypes.Where(t =>
-                t.IsClass && t.GetCustomAttributes().Any(at => at.GetType().Name == attribyteName)).ToList();
+                t.IsClass && t.GetCustomAttributes().Any(at => at.GetType().FullName == attribyte.FullName)).ToList();
             foreach (var interfaces in markedInterfaces)
             {
                 var childClass =
-                    markedClasses.SingleOrDefault(t => t.GetInterfaces().Any(i => i.Name == interfaces.Name));
+                    markedClasses.SingleOrDefault(t => t.GetInterfaces().Any(i => i.FullName == interfaces.FullName));
                 if (childClass != null)
                 {
                     markedClasses.Remove(childClass);
