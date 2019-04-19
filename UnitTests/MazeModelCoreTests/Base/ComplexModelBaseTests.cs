@@ -32,7 +32,7 @@ namespace MazeModelCoreTests.Base
         }
 
         [Test]
-        public void Ctor_PassingComplexModelName_ElementNameRetetnComplexModelName()
+        public void Ctor_PassingComplexModelName_ElementNameRetetnedComplexModelName()
         {
             Assert.AreSame(_complexModelName, _complexModelBaseForTest.ElementName);
         }
@@ -52,9 +52,9 @@ namespace MazeModelCoreTests.Base
         [Test]
         public void Content_SetIModelBase_GetIModelBase()
         {
-            var mock = new Mock<IModelBase>();
-            _complexModelBaseForTest.Content = mock.Object;
-            Assert.AreSame(mock.Object, _complexModelBaseForTest.Content);
+            var mockModelBase = new Mock<IModelBase>();
+            _complexModelBaseForTest.Content = mockModelBase.Object;
+            Assert.AreSame(mockModelBase.Object, _complexModelBaseForTest.Content);
         }
 
         [Test]

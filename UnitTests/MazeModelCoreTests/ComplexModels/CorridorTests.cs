@@ -26,7 +26,7 @@ namespace MazeModelCoreTests.ComplexModels
         }
 
         [Test]
-        public void Ctor_DownEntity1Entity2_DownEntity1UpEntity2IsHorizontalFalseExpects()
+        public void Ctor_DownEntity1Entity2_DownEntity1UpEntity2Expects()
         {
             var corridor = new Сorridor(Direction.Down, _entity1.Object, _entity2.Object);
             Assert.AreSame(corridor[Direction.Down], _entity1.Object);
@@ -36,7 +36,7 @@ namespace MazeModelCoreTests.ComplexModels
         }
 
         [Test]
-        public void Ctor_UpEntity1Entity2_UpEntity1DownEntity2IsHorizontalFalseExpects()
+        public void Ctor_UpEntity1Entity2_UpEntity1DownEntity2Expects()
         {
             var corridor = new Сorridor(Direction.Up, _entity1.Object, _entity2.Object);
             Assert.AreSame(corridor[Direction.Up], _entity1.Object);
@@ -46,7 +46,7 @@ namespace MazeModelCoreTests.ComplexModels
         }
 
         [Test]
-        public void Ctor_LeftEntity1Entity2_LeftEntity1RightEntity2IsHorizontalTrueExpects()
+        public void Ctor_LeftEntity1Entity2_LeftEntity1RightEntity2Expects()
         {
             var corridor = new Сorridor(Direction.Left, _entity1.Object, _entity2.Object);
             Assert.AreSame(corridor[Direction.Left], _entity1.Object);
@@ -56,7 +56,7 @@ namespace MazeModelCoreTests.ComplexModels
         }
 
         [Test]
-        public void Ctor_RightEntity1Entity2_RightEntity1LeftEntity2IsHorizontalTrueExpects()
+        public void Ctor_RightEntity1Entity2_RightEntity1LeftEntity2Expects()
         {
             var corridor = new Сorridor(Direction.Right, _entity1.Object, _entity2.Object);
             Assert.AreSame(corridor[Direction.Right], _entity1.Object);

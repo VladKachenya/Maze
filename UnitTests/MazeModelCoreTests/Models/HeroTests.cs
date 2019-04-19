@@ -7,29 +7,36 @@ namespace MazeModelCoreTests.Models
     [TestFixture]
     public class HeroTests
     {
+        private Hero _hero;
+
+        [SetUp]
+        public void SetUp()
+        {
+            _hero = new Hero();
+        }
+
+        [Test]
+        public void Ctor_IsWinFalse()
+        {
+            Assert.AreEqual(false, _hero.IsWin);
+        }
 
         [Test]
         public void ElementNameIsHero()
         {
-            var hero = new Hero();
-
-            Assert.AreEqual(hero.ElementName, Keys.HeroKey);
+            Assert.AreEqual(_hero.ElementName, Keys.HeroKey);
         }
 
         [TestCase(0)]
-        [TestCase(1)]
-        [TestCase(2)]
         [TestCase(4)]
         public void Collect_HeroIncrementsCoinCount(int count)
         {
-            var hero = new Hero();
-            var res = hero.CoinCount + count;
+            var res = count;
             for (int i = 0; i < count; i++)
             {
-                hero.Collect();
+                _hero.Collect();
             }
-
-            Assert.AreEqual(hero.CoinCount, res);
+            Assert.AreEqual(_hero.CoinCount, res);
         }
     }
 }

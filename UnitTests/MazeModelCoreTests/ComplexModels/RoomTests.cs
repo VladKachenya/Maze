@@ -12,6 +12,8 @@ namespace MazeModelCoreTests.ComplexModels
     [TestFixture]
     public class RoomTests
     {
+        private Room _room;
+
         private static Func<string, Mock<IModelBase>> ModelBaseMockFactory => (name) =>
         {
             var res = new Mock<IModelBase>();
@@ -22,14 +24,13 @@ namespace MazeModelCoreTests.ComplexModels
         [SetUp]
         public void SetUpVoid()
         {
-
+            _room = new Room();
         }
 
         [Test]
         public void GetElementName_RoomKeyReterned()
         {
-            var entity = new Room();
-            Assert.AreEqual(Keys.RoomKey, entity.ElementName);
+            Assert.AreEqual(Keys.RoomKey, _room.ElementName);
         }
 
         [TestCase(Direction.Left)]
@@ -38,11 +39,10 @@ namespace MazeModelCoreTests.ComplexModels
         [TestCase(Direction.Up)]
         public void SetHeighbor_DirectionIModelBase_IndexatorDirectonIndexIModelBaseReterned(Direction direction)
         {
-            var testEntity = new Room();
             var mockEntity = ModelBaseMockFactory.Invoke("str");
 
-            testEntity.SetNeighbor(mockEntity.Object, direction);
-            Assert.AreSame(mockEntity.Object, testEntity[direction]);
+            _room.SetNeighbor(mockEntity.Object, direction);
+            Assert.AreSame(mockEntity.Object, _room[direction]);
         }
 
         #region IsSealedTests
@@ -79,14 +79,12 @@ namespace MazeModelCoreTests.ComplexModels
         [TestCaseSource(nameof(DataForIsSealedTests))]
         public bool IsSealedTest(IEnumerable<Tuple<Direction, IModelBase>> models)
         {
-            var testEntity = new Room();
-
             foreach (var model in models)
             {
-                testEntity.SetNeighbor(model.Item2, model.Item1);
+                _room.SetNeighbor(model.Item2, model.Item1);
             }
 
-            return testEntity.IsSealed;
+            return _room.IsSealed;
         }
         #endregion
 
@@ -117,14 +115,13 @@ namespace MazeModelCoreTests.ComplexModels
         [TestCaseSource(nameof(GetEnumerable))]
         public void GetEnumerableTest(IEnumerable<Tuple<Direction, IModelBase>> models)
         {
-            var testEntity = new Room();
 
             foreach (var model in models)
             {
-                testEntity.SetNeighbor(model.Item2, model.Item1);
+                _room.SetNeighbor(model.Item2, model.Item1);
             }
 
-            var testEnumerable = testEntity.GetEnumerable();
+            var testEnumerable = _room.GetEnumerable();
             foreach (var model in models)
             {
                 var element = testEnumerable.First(el => el.Key == model.Item1);

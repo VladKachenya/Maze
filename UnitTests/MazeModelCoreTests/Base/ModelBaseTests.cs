@@ -23,12 +23,12 @@ namespace MazeModelCoreTests.Base
         }
 
         [Test]
-        public void NewModelBaseArgumentNullException() =>
+        public void Ctor_NullElementName_ArgumentNullException() =>
             Assert.Throws<ArgumentNullException>(() => new ModelBaseClassForTest(null));
 
         [TestCase("")]
         [TestCase("            ")]
-        public void NewModelBaseArgumentException(string arg) =>
+        public void Ctor_EmptyWithSpaseElementName_ArgumentException(string arg) =>
             Assert.Throws<ArgumentException>(() => new ModelBaseClassForTest(arg));
     }
 }

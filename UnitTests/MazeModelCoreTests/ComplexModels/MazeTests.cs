@@ -12,8 +12,8 @@ namespace MazeModelCoreTests.ComplexModels
     {
         Random _rand = new Random();
 
-        [TestCase(5, 10)]
-        [TestCase(15035, 13548)]
+        [TestCase(20, 10)]
+        [TestCase(5, 15)]
         public void Ctor_HeightAndWidthTest(int height, int width)
         {
             var testMaze = new Maze(height, width);
@@ -49,7 +49,7 @@ namespace MazeModelCoreTests.ComplexModels
 
         [TestCase(20, 10)]
         [TestCase(5, 15)]
-        public void Indexator_SetterAndGetterTest(int height, int width)
+        public void Indexator_SetterAndGetterEntityTest(int height, int width)
         {
             var testMaze = new Maze(height, width);
             var moqEntity = new Mock<IRoom>[height, width];
@@ -74,7 +74,7 @@ namespace MazeModelCoreTests.ComplexModels
 
         [TestCase(20, 10)]
         [TestCase(5, 15)]
-        public void GetIndexRandomTest(int height, int width)
+        public void GetIndex_RandomTest(int height, int width)
         {
             var testMaze = new Maze(height, width);
 
@@ -87,6 +87,14 @@ namespace MazeModelCoreTests.ComplexModels
                 testMaze[y, x] = mock.Object;
                 Assert.AreEqual(testMaze.GetIndex(mock.Object), (y, x));
             }
+        }
+
+        [Test]
+        public void GetIndex_ArgumentExeptionTest()
+        {
+            var testMaze = new Maze(10, 15);
+            var mockIRoom = new Mock<IRoom>();
+            Assert.Throws<ArgumentException>(() => testMaze.GetIndex(mockIRoom.Object));
         }
 
         [TestCase(20, 10)]
