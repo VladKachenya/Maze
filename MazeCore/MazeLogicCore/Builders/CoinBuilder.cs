@@ -33,7 +33,7 @@ namespace MazeLogicCore.Builders
             }
         }
 
-        protected (int, int) GetRandomPoint(int height, int width)
+        protected virtual (int, int) GetRandomPoint(int height, int width)
         {
             if (height <= 0 || width <= 0)
             {

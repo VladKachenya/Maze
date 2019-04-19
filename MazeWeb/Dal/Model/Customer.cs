@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Dal.Helper.CustomAttribute;
 using Dal.Model.Base;
 
 namespace Dal.Model

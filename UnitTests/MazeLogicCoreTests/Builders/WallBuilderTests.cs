@@ -3,6 +3,7 @@ using MazeLogicCore.Builders;
 using MazeModelCore.ComplexModels;
 using MazeModelCore.Helper;
 using MazeModelCore.Interfases.Base;
+using Moq;
 using NUnit.Framework;
 
 namespace MazeLogicCoreTests.Builders
@@ -10,16 +11,19 @@ namespace MazeLogicCoreTests.Builders
     [TestFixture]
     public class WallBuilderTests
     {
-        [TestCase(3, 4)]
         [TestCase(10, 15)]
+        [TestCase(20, 15)]
+        [TestCase(1, 3)]
+
         public void Build_UniqueWallCountTest(int height, int width)
         {
-            var maze = new Maze(height, width);
-            new RoomBuilder().Build(maze);
-            new WallBuilder().Build(maze);
-
+            var roomBuilderMock = new Mock<RoomBuilder>();
+            var wallBuilderMock = new Mock<WallBuilder>();
+            var mazeMock = new Mock<Maze>(height, width);
+            roomBuilderMock.Object.Build(mazeMock.Object);
+            wallBuilderMock.Object.Build(mazeMock.Object);
             var uniqueWallEntity = new List<IModelBase>();
-            foreach (var room in maze.GetEnumerable())
+            foreach (var room in mazeMock.Object.GetEnumerable())
             {
                 foreach (var side in room.GetEnumerable())
                 {

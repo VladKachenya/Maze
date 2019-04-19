@@ -1,14 +1,8 @@
-﻿using System;
-using System.Linq;
-using System.Reflection;
-using Dal.EfStuff;
+﻿using Dal.EfStuff;
 using Dal.Helper.CustomAttribute;
-using Dal.Interfases;
 using Dal.Interfases.Repository;
-using Dal.Interfases.Service;
 using Dal.Model.Base;
 using Dal.Repository;
-using Dal.Service;
 using MazeLogicCore.Builders;
 using MazeLogicCore.Converters;
 using MazeLogicCore.Interfases.Builders;
@@ -20,11 +14,13 @@ using MazeModelCore.Models;
 using MazeWebApp.Helper.CustomerAttribute;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Linq;
+using System.Reflection;
 
 namespace MazeWebApp
 {
@@ -40,22 +36,26 @@ namespace MazeWebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             //services.AddScoped<ICustomerRepository, CustomerRepository>();
             //services.AddScoped<IGameRepository, GameRepository>();
             //services.AddScoped<IPlayService, PlayService>();
 
+            // dependencies registration by reflexion
             RegistretionRepository(services);
             RegesterByAttribute(services, typeof(UseDi));
             RegesterByAttribute(services, typeof(MazeWebDi));
 
+            // manually registration of dependencies  
+            services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             services.AddScoped<IHero, Hero>();
             services.AddScoped<IMazeBuilder, MazeBuilder>();
             services.AddScoped<IConverter<IMaze, IModelBase[,]>, MazeToEntityArrayConverter>();
 
+            // dbContext registration
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<DataContext>(options => options.UseSqlServer(connection));
 
+            // add integrated services
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

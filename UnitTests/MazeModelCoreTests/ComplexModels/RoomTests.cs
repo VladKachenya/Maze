@@ -37,10 +37,9 @@ namespace MazeModelCoreTests.ComplexModels
         [TestCase(Direction.Down)]
         [TestCase(Direction.Right)]
         [TestCase(Direction.Up)]
-        public void SetHeighbor_DirectionIModelBase_IndexatorDirectonIndexIModelBaseReterned(Direction direction)
+        public void SetNeighbor_DirectionIModelBase_IndexatorDirectonIndexIModelBaseReterned(Direction direction)
         {
             var mockEntity = ModelBaseMockFactory.Invoke("str");
-
             _room.SetNeighbor(mockEntity.Object, direction);
             Assert.AreSame(mockEntity.Object, _room[direction]);
         }
