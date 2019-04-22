@@ -21,6 +21,7 @@ using System.Linq;
 using System.Net.Mime;
 using System.Reflection;
 using MazeWebCore.Entities.Base;
+using MazeWebCore.Helpers.Attributes;
 using MazeWebCore.Interfaces.Repositories;
 using MazeWebCore.Interfaces.Services;
 using MazeWebCore.Sevices;
@@ -29,9 +30,13 @@ namespace MazeWebApp
 {
     public class Startup
     {
+        private readonly DependencyLogger _dependencyLogger;
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            _dependencyLogger = new DependencyLogger();
+            _dependencyLogger.Initialization();
         }
 
         public IConfiguration Configuration { get; }
@@ -39,22 +44,12 @@ namespace MazeWebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<ICustomerRepository, CustomerRepository>();
-            services.AddScoped<IGameRepository, GameRepository>();
-            services.AddScoped<IPlayService, PlayService>();
-
-            // dependencies registration by reflexion
-            //RegistretionRepository(services);
-
-
+            services.AddScoped(typeof(IServiceCollection), s => services);
             // manually registration of dependencies  
-            services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             services.AddScoped<IHero, Hero>();
             services.AddScoped<IMazeBuilder, MazeBuilder>();
             services.AddScoped<IConverter<IMaze, IModelBase[,]>, MazeToEntityArrayConverter>();
             services.AddScoped<IMazeToCharConverter, MazeToCharConverter>();
-
-            RegesterByAttribute(services, typeof(string));
 
             // dbContext registration
             string connection = Configuration.GetConnectionString("DefaultConnection");
@@ -62,44 +57,16 @@ namespace MazeWebApp
 
             // add integrated services
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            // dependencies registration by reflexion
+            _dependencyLogger.RegesterMarkedTypes(services);
+            //_dependencyLogger.RejesterPropertyIngection(services);
         }
 
-
-        public void RegesterByAttribute(IServiceCollection service, Type attribyte)
-        {
-            var curDir = Environment.CurrentDirectory;
-            var appPath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
-            var assemblies = Directory.GetFiles(appPath);
-            //foreach (var assembly in assemblies)
-            //{
-            //    var asdf = 
-            //}
-            List<Type> dalTypes = new List<Type>();
-            foreach (var assembly in assemblies)
-            {
-                dalTypes.AddRange(Assembly.LoadFrom(assembly).GetTypes());
-            }
-
-            //var dalTypes = Assembly.GetAssembly(attribyte).GetTypes();
-            var markedInterfaces = dalTypes.Where(t =>
-                t.IsInterface && t.GetCustomAttributes().Any(at => at.GetType().FullName == attribyte.FullName));
-            var markedClasses = dalTypes.Where(t =>
-                t.IsClass && t.GetCustomAttributes().Any(at => at.GetType().FullName == attribyte.FullName)).ToList();
-            foreach (var interfaces in markedInterfaces)
-            {
-                var childClass =
-                    markedClasses.SingleOrDefault(t => t.GetInterfaces().Any(i => i.FullName == interfaces.FullName));
-                if (childClass != null)
-                {
-                    markedClasses.Remove(childClass);
-                    service.AddScoped(interfaces, childClass);
-                }
-            }
-            markedClasses.ForEach(el => service.AddScoped(el));
-        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, 
+            IServiceProvider serviceProvider, IServiceCollection serviceCollection)
         {
             if (env.IsDevelopment())
             {
