@@ -1,4 +1,4 @@
-﻿using Dal.Model;
+﻿using MazeWebCore.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Dal.EfStuff

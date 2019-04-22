@@ -1,6 +1,6 @@
-﻿using Dal.Interfases.Repository;
-using Dal.Interfases.Service;
-using Dal.Model;
+﻿using MazeWebCore.Entities;
+using MazeWebCore.Interfaces.Repositories;
+using MazeWebCore.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 

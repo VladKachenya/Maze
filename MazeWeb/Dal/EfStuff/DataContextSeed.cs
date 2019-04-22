@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Dal.Model;
+﻿using MazeWebCore.Entities;
 using Microsoft.EntityFrameworkCore.Internal;
+using System.Collections.Generic;
 
 namespace Dal.EfStuff
 {
@@ -16,7 +15,7 @@ namespace Dal.EfStuff
             }
         }
 
-        static IEnumerable<Customer> GetCustomers()
+        private static IEnumerable<Customer> GetCustomers()
         {
             return new List<Customer>()
             {
@@ -26,7 +25,7 @@ namespace Dal.EfStuff
                 new Customer(){Name = "Vika", Score = 0}
             };
         }
-       
+
     }
 
 }

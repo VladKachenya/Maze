@@ -1,11 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using Dal.EfStuff;
+using MazeWebCore.Entities;
+using MazeWebCore.Interfaces.Repositories;
+using System.Collections.Generic;
 using System.Linq;
-using Dal.EfStuff;
-using Dal.Interfases.Repository;
-using Dal.Model;
+using MazeWebCore.Helpers.Attributes;
 
 namespace Dal.Repository
 {
+    [ForRegistration]
     public class GameRepository : BaseRepository<Game>, IGameRepository
     {
         public GameRepository(DataContext guessContext) : base(guessContext)

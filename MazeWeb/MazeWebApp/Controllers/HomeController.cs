@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using MazeWebApp.Models;
+using MazeWebCore.Helpers;
+using MazeWebCore.Interfaces.Repositories;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
-using Dal.Helper;
-using Dal.Interfases;
-using Dal.Interfases.Repository;
-using Dal.Model;
-using Microsoft.AspNetCore.Mvc;
-using MazeWebApp.Models;
 
 namespace MazeWebApp.Controllers
 {

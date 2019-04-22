@@ -1,13 +1,14 @@
 ﻿using Dal.EfStuff;
-using Dal.Interfases;
-using Dal.Model.Base;
+using MazeWebCore.Entities.Base;
+using MazeWebCore.Interfaces.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
-using Dal.Interfases.Repository;
+using MazeWebCore.Helpers.Attributes;
 
 namespace Dal.Repository
 {
+    [ForRegistration]
     public class BaseRepository<T> : IRepository<T> where T : BaseModel
     {
         protected DataContext DataContext { get; set; }

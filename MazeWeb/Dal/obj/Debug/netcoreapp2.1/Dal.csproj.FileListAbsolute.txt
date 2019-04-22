@@ -42,3 +42,6 @@ C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\obj\Debug\netcorea
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.AssemblyInfo.cs
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.dll
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\MazeWebCore.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\MazeWebCore.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.csproj.CopyComplete

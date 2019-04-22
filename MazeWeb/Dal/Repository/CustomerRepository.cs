@@ -1,12 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using Dal.EfStuff;
+using MazeWebCore.Entities;
+using MazeWebCore.Helpers;
+using MazeWebCore.Interfaces.Repositories;
+using System.Collections.Generic;
 using System.Linq;
-using Dal.EfStuff;
-using Dal.Helper;
-using Dal.Interfases.Repository;
-using Dal.Model;
+using MazeWebCore.Helpers.Attributes;
 
 namespace Dal.Repository
 {
+    [ForRegistration]
     public class CustomerRepository : BaseRepository<Customer>, ICustomerRepository
     {
         public CustomerRepository(DataContext guessContext) : base(guessContext)

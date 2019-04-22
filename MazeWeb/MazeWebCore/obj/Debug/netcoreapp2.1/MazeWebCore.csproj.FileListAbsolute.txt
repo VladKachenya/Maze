@@ -1,0 +1,9 @@
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebCore\bin\Debug\netcoreapp2.1\MazeWebCore.deps.json
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebCore\bin\Debug\netcoreapp2.1\MazeWebCore.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebCore\bin\Debug\netcoreapp2.1\MazeWebCore.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebCore\obj\Debug\netcoreapp2.1\MazeWebCore.csprojAssemblyReference.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebCore\obj\Debug\netcoreapp2.1\MazeWebCore.csproj.CoreCompileInputs.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebCore\obj\Debug\netcoreapp2.1\MazeWebCore.AssemblyInfoInputs.cache
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebCore\obj\Debug\netcoreapp2.1\MazeWebCore.AssemblyInfo.cs
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebCore\obj\Debug\netcoreapp2.1\MazeWebCore.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\MazeWebCore\obj\Debug\netcoreapp2.1\MazeWebCore.pdb
