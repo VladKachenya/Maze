@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\MazeCore\MazeLogicCore\MazeLogicCore.csproj" />
     <ProjectReference Include="..\MazeWebCore\MazeWebCore.csproj" />
   </ItemGroup>
 

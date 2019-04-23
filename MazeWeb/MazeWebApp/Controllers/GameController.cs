@@ -35,7 +35,8 @@ namespace MazeWebApp.Controllers
         public IActionResult Play(Game game)
         {
             _playService.Play(game);
-            return RedirectToAction("GustomerGameProfile", new { customerId = game.Gamer.Id });
+            //return RedirectToAction("GustomerGameProfile", new { customerId = game.Gamer.Id });
+            return RedirectPermanent("~/Maze/Index");
         }
 
     }

@@ -3,7 +3,6 @@ using MazeWebCore.Helpers.Attributes;
 
 namespace MazeWebCore.Interfaces.Repositories
 {
-    [ForRegistration]
     public interface IRepository<T>
     {
         T Add(T model);

@@ -30,12 +30,12 @@ namespace MazeWebApp
 {
     public class Startup
     {
-        private readonly DependencyLogger _dependencyLogger;
+        private readonly DependencyResolver _dependencyLogger;
 
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            _dependencyLogger = new DependencyLogger();
+            _dependencyLogger = new DependencyResolver();
             _dependencyLogger.Initialization();
         }
 
@@ -44,7 +44,8 @@ namespace MazeWebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped(typeof(IServiceCollection), s => services);
+            services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
+
             // manually registration of dependencies  
             services.AddScoped<IHero, Hero>();
             services.AddScoped<IMazeBuilder, MazeBuilder>();
@@ -66,7 +67,7 @@ namespace MazeWebApp
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, 
-            IServiceProvider serviceProvider, IServiceCollection serviceCollection)
+            IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {

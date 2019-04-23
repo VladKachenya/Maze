@@ -50,3 +50,7 @@ C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\MazeWeb
 C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\obj\Debug\netcoreapp2.1\Dal.csproj.CopyComplete
 C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\MazeModelCore.dll
 C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\MazeModelCore.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\MazeModelCore.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\MazeModelCore.pdb
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\MazeLogicCore.dll
+C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\MazeLogicCore.pdb

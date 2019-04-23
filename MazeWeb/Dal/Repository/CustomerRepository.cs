@@ -4,6 +4,8 @@ using MazeWebCore.Helpers;
 using MazeWebCore.Interfaces.Repositories;
 using System.Collections.Generic;
 using System.Linq;
+using MazeLogicCore.Interfases.Builders;
+using MazeModelCore.Interfases.Models;
 using MazeWebCore.Helpers.Attributes;
 
 namespace Dal.Repository
@@ -11,9 +13,47 @@ namespace Dal.Repository
     [ForRegistration]
     public class CustomerRepository : BaseRepository<Customer>, ICustomerRepository
     {
+
+
+        [Injection]
         public CustomerRepository(DataContext guessContext) : base(guessContext)
         {
         }
+
+        #region test dependensies injection
+        [Injection]
+        public IHero MazeProm
+        {
+            get => null;
+            set
+            {
+                var el = value;
+            }
+        }
+
+        [Injection]
+        public IGameRepository gr
+        {
+            get => null;
+            set
+            {
+                var el = value;
+            }
+        }
+
+
+        [Injection]
+        public void SetValue(IHero hero, IMazeBuilder builder, IGameRepository gameRepository)
+        {
+
+        }
+
+        [Injection]
+        public void SetMethod()
+        {
+        }
+        #endregion
+
 
         public IEnumerable<Customer> GetSortedCustomers(CustomerSortEnum sortOrder)
         {

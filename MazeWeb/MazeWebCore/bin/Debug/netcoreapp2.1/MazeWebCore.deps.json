@@ -7,27 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "MazeWebCore/1.0.0": {
-        "dependencies": {
-          "MazeModelCore": "1.0.0"
-        },
         "runtime": {
           "MazeWebCore.dll": {}
-        }
-      },
-      "MazeModelCore/1.0.0": {
-        "runtime": {
-          "MazeModelCore.dll": {}
         }
       }
     }
   },
   "libraries": {
     "MazeWebCore/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "MazeModelCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

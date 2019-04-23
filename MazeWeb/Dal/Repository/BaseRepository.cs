@@ -8,7 +8,6 @@ using MazeWebCore.Helpers.Attributes;
 
 namespace Dal.Repository
 {
-    [ForRegistration]
     public class BaseRepository<T> : IRepository<T> where T : BaseModel
     {
         protected DataContext DataContext { get; set; }

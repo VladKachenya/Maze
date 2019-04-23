@@ -1,9 +1,8 @@
-﻿using System;
-using MazeModelCore.Interfases.ComplexModels;
-using MazeWebCore.Entities;
+﻿using MazeWebCore.Entities;
 using MazeWebCore.Helpers.Attributes;
 using MazeWebCore.Interfaces.Repositories;
 using MazeWebCore.Interfaces.Services;
+using System;
 
 namespace MazeWebCore.Sevices
 {
@@ -12,7 +11,6 @@ namespace MazeWebCore.Sevices
     {
         private readonly IRepository<Customer> _customerRepository;
         private readonly IRepository<Game> _gameRepository;
-        private IMaze _mazeProm;
 
         [Injection]
         public PlayService(IRepository<Customer> customerRepository, IRepository<Game> gameRepository)
@@ -26,16 +24,6 @@ namespace MazeWebCore.Sevices
             game.Gamer = _customerRepository.Get(game.Gamer.Id);
             game.Date = DateTime.Now;
             _gameRepository.Add(game);
-        }
-
-        [Injection]
-        public IMaze MazeProm
-        {
-            get => _mazeProm;
-            set
-            {
-                _mazeProm = value;
-            }
         }
     }
 }

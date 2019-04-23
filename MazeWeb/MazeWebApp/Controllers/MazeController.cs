@@ -22,6 +22,7 @@ namespace MazeWebApp.Controllers
             _maze = builder.ConstrainMaze(10, 15);
             _engine = new Processor(hero, _maze);
         }
+
         public IActionResult Index()
         {
             return View(_mazeToCharConverter.Convert(_maze));

@@ -10,6 +10,7 @@ namespace Dal.Repository
     [ForRegistration]
     public class GameRepository : BaseRepository<Game>, IGameRepository
     {
+        [Injection]
         public GameRepository(DataContext guessContext) : base(guessContext)
         {
         }
