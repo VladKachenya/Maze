@@ -67,7 +67,7 @@ using MazeWebCore.Entities;
             WriteLiteral("\r\n\r\n\r\n<table class=\"table\">\r\n    <tr>\r\n        <td>");
             EndContext();
             BeginContext(119, 65, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8ae840b19121454489e6e4b42873d91e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3ecac7f69ce4438ab02777d682a3ea19", async() => {
                 BeginContext(179, 1, true);
                 WriteLiteral("#");
                 EndContext();
@@ -102,7 +102,7 @@ using MazeWebCore.Entities;
             WriteLiteral("</td>\r\n        <td>");
             EndContext();
             BeginContext(203, 70, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "05afcf909a2349419088a2fcd2d772c5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b198a7e6db4462fb6cd3cbd08039616", async() => {
                 BeginContext(265, 4, true);
                 WriteLiteral("Name");
                 EndContext();
@@ -137,7 +137,7 @@ using MazeWebCore.Entities;
             WriteLiteral("</td>\r\n        <td>");
             EndContext();
             BeginContext(292, 72, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d9023ee2d981474aa0d80e0acf231a49", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "833e8886a6bc445f8580450a1c2529b8", async() => {
                 BeginContext(355, 5, true);
                 WriteLiteral("Score");
                 EndContext();
@@ -211,7 +211,7 @@ using MazeWebCore.Entities;
             WriteLiteral("</td>\r\n        <td>");
             EndContext();
             BeginContext(571, 109, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cb5e88e625ca4763978a305046ee824c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c66e3bed4cc743d8b22fbffc6dd8e40d", async() => {
                 BeginContext(665, 11, true);
                 WriteLiteral("Go to games");
                 EndContext();

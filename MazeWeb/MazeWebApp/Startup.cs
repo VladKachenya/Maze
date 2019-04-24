@@ -20,6 +20,7 @@ using System.IO;
 using System.Linq;
 using System.Net.Mime;
 using System.Reflection;
+using AspNetCore.RouteAnalyzer;
 using MazeWebCore.Entities.Base;
 using MazeWebCore.Helpers.Attributes;
 using MazeWebCore.Interfaces.Repositories;
@@ -30,13 +31,13 @@ namespace MazeWebApp
 {
     public class Startup
     {
-        private readonly DependencyResolver _dependencyLogger;
+        private readonly DependencyResolver _dependencyResolver;
 
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            _dependencyLogger = new DependencyResolver();
-            _dependencyLogger.Initialization();
+            _dependencyResolver = new DependencyResolver();
+            _dependencyResolver.Initialization();
         }
 
         public IConfiguration Configuration { get; }
@@ -58,10 +59,11 @@ namespace MazeWebApp
 
             // add integrated services
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddRouteAnalyzer();
 
             // dependencies registration by reflexion
-            _dependencyLogger.RegesterMarkedTypes(services);
-            //_dependencyLogger.RejesterPropertyIngection(services);
+            _dependencyResolver.RegesterMarkedTypes(services);
+            //_dependencyResolver.RejesterPropertyIngection(services);
         }
 
 
@@ -89,6 +91,14 @@ namespace MazeWebApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            if (env.IsDevelopment())
+            {
+                app.UseMvc(routes =>
+                {
+                    routes.MapRouteAnalyzer("/routes"); // Add
+                });
+            }
         }
     }
 }

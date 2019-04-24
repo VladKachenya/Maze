@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "AspNetCore.RouteAnalyzer/0.5.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore": "2.0.0",
+          "Microsoft.AspNetCore.Mvc": "2.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/AspNetCore.RouteAnalyzer.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/AspNetCore.RouteAnalyzer.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4667,6 +4680,19 @@
     }
   },
   "libraries": {
+    "AspNetCore.RouteAnalyzer/0.5.3": {
+      "sha512": "2qQdI7gX+qQjpFKEDccgpipLi5QId/Omhai4S4oAGJwEtk5CNK/dnpt9s2WlMKxy3DmXaCE8GnR50vF4l/DbbQ==",
+      "type": "package",
+      "path": "aspnetcore.routeanalyzer/0.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspnetcore.routeanalyzer.0.5.3.nupkg.sha512",
+        "aspnetcore.routeanalyzer.nuspec",
+        "lib/netcoreapp2.0/AspNetCore.RouteAnalyzer.dll",
+        "lib/netcoreapp2.0/AspNetCore.RouteAnalyzer.pdb"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "owAlEIUZXWSnkK8Z1c+zR47A0X6ykF4XjbPok4lQKNuciUfHLGPd6QnI+rt/8KlQ17PmF+I4S3f+m+Qe4IvViw==",
       "type": "package",
@@ -12593,6 +12619,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "AspNetCore.RouteAnalyzer >= 0.5.3",
       "Dal >= 1.0.0",
       "MazeLogicCore >= 1.0.0",
       "MazeModelCore >= 1.0.0",
@@ -12657,6 +12684,10 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "AspNetCore.RouteAnalyzer": {
+            "target": "Package",
+            "version": "[0.5.3, )"
+          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",

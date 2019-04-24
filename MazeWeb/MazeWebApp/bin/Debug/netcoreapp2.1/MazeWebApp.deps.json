@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "becb34914e560acf091fdc4e22e25f3bb50e31f0"
+    "signature": "455322997ae3222b3e152d8dd2bc2098e02844a1"
   },
   "compilationOptions": {
     "defines": [
@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.1": {
       "MazeWebApp/1.0.0": {
         "dependencies": {
+          "AspNetCore.RouteAnalyzer": "0.5.3",
           "Dal": "1.0.0",
           "MazeLogicCore": "1.0.0",
           "MazeModelCore": "1.0.0",
@@ -38,6 +39,21 @@
         },
         "compile": {
           "MazeWebApp.dll": {}
+        }
+      },
+      "AspNetCore.RouteAnalyzer/0.5.3": {
+        "dependencies": {
+          "Microsoft.AspNetCore": "2.1.1",
+          "Microsoft.AspNetCore.Mvc": "2.1.1"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/AspNetCore.RouteAnalyzer.dll": {
+            "assemblyVersion": "0.5.3.0",
+            "fileVersion": "0.5.3.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.0/AspNetCore.RouteAnalyzer.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -3547,6 +3563,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AspNetCore.RouteAnalyzer/0.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2qQdI7gX+qQjpFKEDccgpipLi5QId/Omhai4S4oAGJwEtk5CNK/dnpt9s2WlMKxy3DmXaCE8GnR50vF4l/DbbQ==",
+      "path": "aspnetcore.routeanalyzer/0.5.3",
+      "hashPath": "aspnetcore.routeanalyzer.0.5.3.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",
