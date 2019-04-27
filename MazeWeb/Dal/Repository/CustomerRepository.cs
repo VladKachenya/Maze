@@ -1,12 +1,12 @@
 ﻿using Dal.EfStuff;
+using MazeLogicCore.Interfases.Builders;
+using MazeModelCore.Interfases.Models;
 using MazeWebCore.Entities;
 using MazeWebCore.Helpers;
+using MazeWebCore.Helpers.Attributes;
 using MazeWebCore.Interfaces.Repositories;
 using System.Collections.Generic;
 using System.Linq;
-using MazeLogicCore.Interfases.Builders;
-using MazeModelCore.Interfases.Models;
-using MazeWebCore.Helpers.Attributes;
 
 namespace Dal.Repository
 {
@@ -45,7 +45,6 @@ namespace Dal.Repository
         [Injection]
         public void SetValue(IHero hero, IMazeBuilder builder, IGameRepository gameRepository)
         {
-
         }
 
         [Injection]
