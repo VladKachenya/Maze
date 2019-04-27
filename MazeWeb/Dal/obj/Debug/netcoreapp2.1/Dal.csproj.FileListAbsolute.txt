@@ -54,3 +54,5 @@ C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\bin\Debug\netcorea
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\MazeModelCore.pdb
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\MazeLogicCore.dll
 C:\Users\Vlad_UPR\Desktop\GitHub Repositores\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\MazeLogicCore.pdb
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\MazeLogicCore.dll
+C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\Dal\bin\Debug\netcoreapp2.1\MazeLogicCore.pdb

@@ -16,6 +16,3 @@ C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\MazeWebCore\obj\Debug\netcoreapp2.1
 C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\MazeWebCore\obj\Debug\netcoreapp2.1\MazeWebCore.AssemblyInfo.cs
 C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\MazeWebCore\obj\Debug\netcoreapp2.1\MazeWebCore.dll
 C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\MazeWebCore\obj\Debug\netcoreapp2.1\MazeWebCore.pdb
-C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\MazeWebCore\bin\Debug\netcoreapp2.1\MazeModelCore.dll
-C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\MazeWebCore\bin\Debug\netcoreapp2.1\MazeModelCore.pdb
-C:\Users\VlAD\Desktop\EpamTasks\Maze\MazeWeb\MazeWebCore\obj\Debug\netcoreapp2.1\MazeWebCore.csproj.CopyComplete

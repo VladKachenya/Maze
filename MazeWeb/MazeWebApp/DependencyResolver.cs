@@ -43,9 +43,9 @@ namespace MazeWebApp
             }
 
             _markedInterfaces = assembliesTypes.Where(t =>
-                t.IsInterface && t.GetCustomAttributes().Any(at => at.GetType().GUID == _attribyteForRegictration.GUID));
+                t.IsInterface && t.GetCustomAttributes().Any(at => at.GetType() == _attribyteForRegictration));
             _markedClasses = assembliesTypes.Where(t =>
-                t.IsClass && t.GetCustomAttributes().Any(at => at.GetType().GUID == _attribyteForRegictration.GUID));
+                t.IsClass && t.GetCustomAttributes().Any(at => at.GetType() == _attribyteForRegictration));
         }
 
         public void RegesterMarkedTypes(IServiceCollection service)
@@ -54,7 +54,7 @@ namespace MazeWebApp
             foreach (var interfaces in _markedInterfaces)
             {
                 var childClass =
-                    markedClasses.SingleOrDefault(t => t.GetInterfaces().Any(i => i.GUID == interfaces.GUID));
+                    markedClasses.SingleOrDefault(t => t.GetInterfaces().Any(i => i == interfaces));
                 if (childClass != null)
                 {
                     markedClasses.Remove(childClass);
@@ -69,7 +69,7 @@ namespace MazeWebApp
         {
             // ctor injections
             var constructor = childClass.GetConstructors().Single(c =>
-                c.GetCustomAttributes().Any(a => a.GetType().GUID == _attribyteForIngection.GUID));
+                c.GetCustomAttributes().Any(a => a.GetType() == _attribyteForIngection));
             var ctorParams = constructor.GetParameters().Select(pi => pi.ParameterType);
             var ctorInjection = new List<Object>();
             foreach (var type in ctorParams)
@@ -80,7 +80,7 @@ namespace MazeWebApp
 
             // property injections
             var markedPropeties = childClass.GetProperties(BindingFlags.Public | BindingFlags.Instance).
-                Where(p => p.GetCustomAttributes().Any(a => a.GetType().GUID == _attribyteForIngection.GUID));
+                Where(p => p.GetCustomAttributes().Any(a => a.GetType() == _attribyteForIngection));
             foreach (var property in markedPropeties)
             {
                 var properyEntity = serviceProvider.GetService(property.PropertyType);
@@ -89,7 +89,7 @@ namespace MazeWebApp
 
             // setter injections
             var markedMethods = childClass.GetMethods(BindingFlags.Public | BindingFlags.Instance).
-                Where(p => p.GetCustomAttributes().Any(a => a.GetType().GUID == _attribyteForIngection.GUID));
+                Where(p => p.GetCustomAttributes().Any(a => a.GetType() == _attribyteForIngection));
             foreach (var method in markedMethods)
             {
                 var methodsParams = method.GetParameters().Select(pi => pi.ParameterType);
