@@ -30,13 +30,13 @@ namespace MazeWebApp
 {
     public class Startup
     {
-        private readonly DependencyResolver _dependencyLogger;
+        private readonly DependencyResolver _dependencyResolver;
 
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            _dependencyLogger = new DependencyResolver();
-            _dependencyLogger.Initialization();
+            _dependencyResolver = new DependencyResolver();
+            _dependencyResolver.Initialization();
         }
 
         public IConfiguration Configuration { get; }
@@ -60,8 +60,8 @@ namespace MazeWebApp
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             // dependencies registration by reflexion
-            _dependencyLogger.RegesterMarkedTypes(services);
-            //_dependencyLogger.RejesterPropertyIngection(services);
+            _dependencyResolver.RegesterMarkedTypes(services);
+            //_dependencyResolver.RejesterPropertyIngection(services);
         }
 
 
